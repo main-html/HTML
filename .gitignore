@@ -1,0 +1,16 @@
+# Archives #
+*.7z
+*.gz
+*.tar
+*.tgz
+*.zip
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+
+# Windows Contributors #
+Thumbs.db
