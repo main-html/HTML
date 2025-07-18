@@ -1,0 +1,6 @@
+## Human Readability
+
+# Website Metadata
+author: Your Name
+website: Your Website
+

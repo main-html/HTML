@@ -5,12 +5,9 @@
 *.tgz
 *.zip
 
-# OS generated files #
-.DS_Store
-.DS_Store?
-._*
-.Trashes
-ehthumbs.db
+# Hidden files #
+.*
 
-# Windows Contributors #
-Thumbs.db
+# OS generated files #
+.Trashes
+thumbs.db

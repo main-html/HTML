@@ -1,3 +1,35 @@
-# main-html
-Main HTML is a template for hosting a cost effective, reliable and very fast website in Google Cloud.
-Main JS is a small JS library for hosting a cost effective, reliable and very fast website in Google Cloud.
+<p align="center">
+    <a href="https://www.mainhtml.dev/project/">
+        <img src="https://www.mainhtml.dev/image/mainhtml.svg" alt="Main HTML Logo" width="1075" height="300" style="filter:invert(1);">
+    </a>
+</p>
+
+<h1 align="center">Main HTML</h1>
+Main HTML is an accessibility aware template putting users and web developers first. This makes your website into a living document through a collection of rules and interactive roles adapting the content delivery, inferred by behaviour and browser insights. Start your next project with a modern template that makes designing and building websites easier and faster. Leveraging server-less architecture for performance and millions of styling possibilities, you can build a small website in minutes or maintain a significant digital presence with Main.
+
+The Main.HTML project provides you with a truly portable website builder template. Powered by Main.JS Under the hood!
+
+
+## Main JS objective
+The objective of Main JS is to deliver the best possible experience for website users, developers and website owners. 
+To achieve this, Main JS creates a few easy to follow standards that when applied in web development, help streamline the complex processes of fetching resources, rendering layout, applying personalisation and measuring performance. 
+
+This functionality is platform agnostic, accessibility aware and has no need for backend software packages, costly infrastructure or connectivity requirements.
+
+
+## Getting started
+Several quick start options are available:
+
+- [Download the latest release] or Download the repo ZIP from a branch you choose.
+- Clone the repo: `git clone https://github.com/AndyFutcher/main.html`
+
+
+## Change log
+Version 0.6-beta - Initial Release 
+ - Still missing some major branches of on the roadmap and a few HTML markups too.
+
+
+### About the developer
+
+Copyright (C) 2025 **Andy Futcher**, I am the developer and maintainer of Main JS and Main HTML project and professional analyst at a not-for-profit health insurer.
+Main JS is free and open source and will always be, my goal is to give everyone possible a first class ticket to the most well known and well-written markup language on earth; HTML. This is not just because of the projects chosen licence (GPLv3,) but it's a commitment to remain impartial and community focused and to never sell out or steer Main JS away from the core focus of portability and maintainability.

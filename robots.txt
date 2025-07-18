@@ -1,0 +1,6 @@
+## Robots Directives
+
+# Indexability
+User-agent: *
+Allow: /
+

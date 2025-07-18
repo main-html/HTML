@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Main.HTML Page Customisation: START -->
+	<!-- Page Encoding -->
+	<meta charset="UTF-8" />
+	
+	<!-- Page Meta -->
+	<title>Main HTML Template</title>
+	<meta name="author" content="Your Name">
+	<meta name="website" content="Your Website" />
+	<meta name="description" content="Your Page Description" />
+	<meta name="robots" content="all">
+	<meta name="theme" content="default.css">
+	<meta name="theme-color" content="gray">
+	<link rel="canonical" href="https://www.mainhtml.dev/template.html" />
+	
+	<!-- Custom Main.HTML & Main.JS -->
+	<meta property="main.consent.posture" content="consent" />
+	<meta property="main.track.domains" content="mainhtml.dev,mainhtml.com" />
+	<meta property="main.font.provider" content="Google" />
+	<meta property="main.font.family.headings" content="Gugi" />
+	<meta property="main.font.family.body" content="Roboto:ital,wght@0,100..900;1,100..900" />
+	<!-- <meta property="main.body.navigation.logo.alt" content="My Logo" /> -->
+	<!-- <meta property="main.body.navigation.logo.src" content="images/main.svg" /> -->
+	
+	<!-- Page Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.mainhtml.dev/" />
+	<meta property="og:title" content="Your Website" />
+	<meta property="og:description" content="Your Page Description" />
+	<meta property="og:image" content="https://www.mainhtml.dev/image/mainhtml.svg" />
+	
+	<!-- Page Schemas & Canonical Base Tag -->
+	<script type="application/ld+json">[{"@context": "http://schema.org"
+		,"@type": "WebSite"
+		,"name": "Your Website"
+		,"url": "https://www.mainhtml.dev/"
+	},{"@context": "http://schema.org"
+		,"@type": "Organization"
+		,"name": "Your Website"
+		,"url": "https://www.mainhtml.dev/"
+		,"logo": "https://www.mainhtml.dev/image/mainhtml.svg"
+	}]</script>
+	<noscript><base href="https://www.mainhtml.dev/"></noscript>
+	<!-- Main.HTML Page Customisation: END -->
+
+	<!-- Main.JS v0.6 Snippet: START -->
+	<script> /* GNU General Public License v3.0
+		# Main JS is a modern, lightweight and portable website JavaScript framework, Copyright (C) 2025 Andy Futcher. See <https://mainjs.org/> for more
+		# This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+		# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+		# Main.JS not modified from original. Date: 2025-07-18 ### */
+		var main={version:{main:0,minor:6,patch:5,branch:'main',htmlless:false},meta:{},js:{proto:{fs:'/',fs2:'//',https:'https:',http:'http:',file:'file:'},create:{base:document.createElement('base'),theme:document.createElement('link'),script:document.createElement('script'),style:document.createElement("style")},css:{loaded:false},regex:{base:/.*(\:\/\/|public\B|-html\b|-js\b|-dev\b|-rc\b|-main\b|-com\b|-com-[a-z]|-co-[a-z])[a-zA-Z0-9\-\_\.]*/i}}}; // Declare Main Object
+		main.meta.theme=main.meta.theme||document.querySelector('meta[name="theme"]')||document.querySelector('meta[property$=".theme"]')||'default.css';if(main.meta.theme.content){main.meta.theme=main.meta.theme.content;}; // Webpages Canonical URL
+		main.meta.canonical=main.meta.canonical||document.querySelector('link[rel="canonical"]')||window.location.pathname.match(main.js.regex.base)[0];if(main.meta.canonical.href){main.meta.canonical=main.meta.canonical.href;}; // Webpages Canonical URL
+		switch(window.location.protocol){case main.js.proto.https:main.js.create.base.href=(window.location.origin+window.location.pathname).match(main.js.regex.base)[0]+main.js.proto.fs; // Origin Execution
+		break;case main.js.proto.file:main.js.create.base.href=(window.location.protocol+main.js.proto.fs2+window.location.pathname).match(main.js.regex.base)[0]+main.js.proto.fs; // Local Execution
+		break;case main.js.proto.http:window.location.href=main.js.proto.https+window.location.host+window.location.pathname; // Redirect to HTTPS Version
+		break;default:window.location.href=main.meta.canonical; // Unknown Protocol, Redirect to Canonical
+		};main.base=main.js.create.base.href;document.head.appendChild(main.js.create.base); // Inject Base Tag
+		Object.assign(main.js.create.theme,main.version.htmlless||{id:"main-theme",rel:"preload",as:"style",href:"main/theme/"+main.meta.theme+"?version="+Object.values(main.version).join('')});document.head.appendChild(main.js.create.theme).setAttribute('onload',"this.onload=null;this.rel='stylesheet'"); // Inject Lazy Loaded CSS
+		Object.assign(main.js.create.style,{id:"main-css"});document.head.appendChild(main.js.create.style);main.js.css=Object.assign(main.js.css,{sheet:main.js.create.style.sheet.insertRule('main, footer { visibility: hidden; }',0),index:{loading:0}}); // Inject Main CSS Head
+		Object.assign(main.js.create.script,{id:"main-js",src:"main/main.js?version="+Object.values(main.version).join(''),defer:'true'});document.head.appendChild(main.js.create.script); // Inject Deferred JS Script
+	</script><noscript><link rel="stylesheet" href="main/theme/default.css"></noscript>
+	<!-- Main.JS v0.6 Snippet: END -->
+	<!-- ### Main.JS insert add-on Main.JS scripts after this line. ### -->
+
+	<!-- Main.HTML Viewport -->
+	<meta name="generator" content="Main HTML">
+	<meta name="viewport" content="width=device-width,initial-scale=1" /><meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="handheldfriendly" content="true" /><meta name="mobile-web-app-capable" content="yes" />
+	<link rel="icon" href="favicon.svg" /><link rel="apple-touch-icon" href="favicon.svg">
+	
+	<!-- Main.HTML CSS Wireframe: START -->
+	<style id="main-style"> /* GNU General Public License v3.0
+		# Main HTML is an accessibility aware template putting users and web developers first, Copyright (C) 2025 Andy Futcher. See <https://www.mainhtml.dev/> for more
+		# This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+		# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+		## Main.HTML not modified from original. Date: 2025-07-17  ### --> */
+		/* Wireframe */
+		*,*::before,*::after {box-sizing:border-box;margin:0;padding:0;
+		} :root {color-scheme:light dark;
+		/* Version */
+		--ver-major:0;--ver-minor:6;--ver-patch:5;--ver-branch:"main";
+		/* Font Defaults */
+		/*--font-body:"";--font-headings:"";--font-monospace:"";--font-title:"";--font-brand:"";--font-footer:"";--font-reader-mode:"";*/
+		--font-fallback:-apple-system,BlinkMacSystemFont,"Apple Color Emoji";
+		--page-width:1040px;
+		--page-margin:10vw; /*auto*/
+		--page-left:10vw;
+		--page-top:0px;
+		--page-bottom:0px;
+		--border-width:1px;
+		--scrollbar-width:0px;
+		--nav-height:80px;
+		--radiuses:.25rem;
+		--spacing:1rem;
+		--z-limit:10;
+		/* Dark Mode: Default */
+		--header:#1e1e1e;--header-text:#ddd9d5;
+		--background:#212529;--text:#ddd9d5;--text-shadow:#000;
+		--primary:#0d6efd;--secondary:#64666c;--disabled:#242a2f;
+		--surface:#1e1e1e;--border:#333b42;--flex:#2c2c2c;
+		--link:#6ea8fe;--link-hover:#9ec5fe;
+		--footer:#1e1e1e;--footer-text:#e0e0e0;
+		--table-header:#343a40;--table-border:#495057;
+		--code:#343a40;--code-text:#f08080;
+		--button:var(--primary);--button-text:#ffffff;--button-hover:#0b5ed7;
+		--input:#2c2c2c;--input-border:#495057;--input-focus-border:#86b7fe;--input-focus-shadow:0 0 0.25rem 0.15rem rgba(13, 110, 253, 0.5);
+		--highlight:#664d03;--highlight-text:#fff3cd;
+		--scrollbar:#495057;--scrollbar-track:#2c2c2c;
+		--blockquote-border:var(--primary);
+		} body[class*="light"] { /* Light Mode */
+		--header:#d9d7d0;--header-text:#23272b;
+		--background:#fffcf7;--text:#343a40;--text-shadow:#fff;
+		--primary:#007bff;--secondary:#9ba2a6;--disabled:#d0cec6;
+		--surface:#f0eee8;--border:#d1cfc7;--flex:#ffffff;
+		--link:var(--primary);--link-hover:#409eff;
+		--footer:#343a40;--footer-text:#f8f9fa;
+		--table-header:#c2b9af;--table-border:#887e74;
+		--code:#e2e1e4;--code-text:#c7254e;
+		--button:var(--primary);--button-text:#ffffff;--button-hover:#0056b3;
+		--input:#fff;--input-border:#ced4da;--input-focus-border:#86b7fe;--input-focus-shadow:0 0 0.25rem 0.15rem rgba(13, 110, 253, 0.5);
+		--highlight:#fff3cd;--highlight-text:#664d03;
+		--scrollbar:#ced4da;--scrollbar-track:#fff;
+		--blockquote-border:var(--primary);
+		} body[class*="reader"] { /* Reader Mode */
+		--font-reader-mode:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Open Sans",Roboto,Oxygen,Ubuntu,Arial;
+		--text-shadow:transparent;
+		} /* Elements */
+		html {-moz-tab-size:4;tab-size:4;overflow-x:hidden;overflow-y:hidden;overflow:hidden;width:100%;max-width:100%;height:100%;max-height:100%;
+		} body {margin:0;min-height:100%;height:100vh;max-height:100vh;width:100%;max-width:100%;color:var(--text);font-family:var(--font-reader-mode,var(--font-body,var(--font-fallback)));font-size:1rem;line-height:1.6;background:var(--background);overflow-y:auto;overflow-x:hidden;flex-direction:column;caret-color:transparent;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;scrollbar-color:var(--scrollbar) var(--scrollbar-track);
+		} header,[role="banner"] {padding:calc(var(--nav-height,0px) + var(--spacing,1rem)) 0 calc(var(--spacing,1rem) * 4);color:var(--header-text);text-align:center;background:var(--header);
+		} header,[role="banner"],nav,article,aside,section,surface,[role="region"] {display:block;
+		} article,aside,section,surface,[role="region"] {margin:calc(var(--spacing,1rem) * 2) 0;
+		} main,[role="main"] {display:block;flex-grow:1;/*margin-top:max(var(--page-top), 0px);*/
+		} main header,main [role="banner"],[role="main"] header,[role="main"] [role="banner"] {margin-bottom:calc(var(--spacing,1rem) * 2);padding-bottom:0;border-bottom:var(--border-width,1px) solid var(--border);
+		} main :first-child,header :first-child,nav :first-child,div :first-child,footer :first-child {margin-top:0;
+		} main:last-child,header :last-child,nav :last-child,div div :not(button,.button):last-child,footer :last-child {margin-bottom:0;
+		} main header>div,main [role="banner"]>div,[role="main"] header>div,[role="main"] [role="banner"]>div {margin-top:0;
+		} main>div,[role="main"]>div,footer>div,[role="contentinfo"]>div,aside>div,main>article,main header>div,main [role="banner"]>div,dialog:not(dialog.alertdialog,dialog[role="alertdialog"],dialog.notification)>div,dialog.notification>div>*,dialog>form {padding:calc(var(--spacing,1rem) * 2) 0 0;margin:0 auto 0 var(--page-margin,auto);width:calc(90% - var(--page-left,0vw));max-width:var(--page-width,1040px);
+		} main>header>div p,[role="main"]>header>div p,main>[role="banner"]>div p,[role="main"]>[role="banner"]>div p {margin-top:var(--spacing,1rem);font-size:1.2rem;
+		} .surface,surface {padding:calc(var(--spacing,1rem) * 1.25) var(--spacing,1rem) var(--spacing,1rem);margin-top:calc(var(--spacing,1rem) * 2);background:var(--surface);border:var(--border-width,1px) solid var(--border);border-radius:var(--radiuses,.25rem);box-shadow:0 0 1em 0 var(--header);
+		} section :first-child,.surface :first-child,surface :first-child,[role="region"] :first-child {margin-top:0;
+		} section>div:not(.flexible,flexible) {padding:var(--spacing,1rem);
+		} h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,.title,title {margin-top:calc(var(--spacing,1rem) * 2);color:var(--text);font-family:var(--font-reader-mode,var(--font-headings,var(--font-fallback)));font-weight:bold;line-height:1.2;cursor:default;text-shadow:1px 1px 2px var(--text-shadow);
+		} .title,title {font-family:var(--font-title,var(--font-headings,var(--font-fallback)));
+		} .brand,brand {font-family:var(--font-brand,var(--font-headings,var(--font-fallback)));
+		} .title,title,.biggest,biggest {font-size:4.5em;
+		} h1,.h1,.bigger,bigger {font-size:2em;
+		} h2,.h2,.big,big {font-size:1.5em;
+		} h3,.h3 {font-size:1.17em;
+		} h4,.h4 {font-size:1em;
+		} h5,.h5 {font-size:0.83em;
+		} h6,.h6 {font-size:0.67em;
+		} p,address {margin-top:var(--spacing,1rem);cursor:default;
+		} .br {margin-top:0;
+		} .nbsp,p>code {white-space:nowrap;
+		} a,[onclick] {color:var(--link);text-decoration:none;cursor:pointer;
+		} a[href^="tel:"],a[href^="mailto:"] {font-family:var(--font-monospace,Consolas),monospace;
+		} a:not(.button):hover,a:not(.button):focus {color:var(--link-hover);text-decoration:underline;
+		} hr {margin:calc(var(--spacing,1rem) * 2) 0;border:0;border-top:var(--border-width,1px) solid var(--border);box-sizing:content-box;overflow:visible;
+		} main>hr,[role="main"]>hr,main>picture,[role="main"]>picture {margin:calc(var(--spacing,1rem) * 2) 0 0;
+		} abbr[title] {text-decoration:underline dotted;cursor:help;
+		} strong,b,dt {font-weight:bold;
+		} em,i {font-style:italic;
+		} u {text-decoration:underline;
+		} small {font-size:80%;font-weight:400;vertical-align:middle;
+		} s,strike {text-decoration:line-through;
+		} sub,sup {position:relative;font-size:75%;line-height:0;vertical-align:baseline;
+		} sub {bottom:-0.25em;
+		} sup {top:-0.5em;
+		} cite {display:inline-block;color:var(--secondary);font-style:normal;font-size:0.9em;text-align:right;
+		} mark {padding:0.2em;color:var(--highlight-text);background:var(--highlight);
+		} ul,ol {margin-top:0;margin-bottom:1em;padding-left:2em;
+		} dd {margin-left:0;margin-bottom:0.5em;
+		} code,kbd,samp,p pre {cursor:text;padding:0.2em 0.4em;color:var(--code-text);font-family:var(--font-monospace,Consolas),monospace;font-size:0.9em;background:var(--code);border-radius:var(--radiuses,.25rem);text-shadow:1px 1px 2px var(--text-shadow);
+		} p pre {padding:var(--spacing,1rem);overflow-x:auto;white-space:pre-wrap;word-wrap:break-word;
+		} blockquote,[role="presentation"] {margin:var(--spacing,1rem) var(--spacing,1rem) var(--spacing,1rem) calc(var(--spacing,1rem) * 2);padding-left:var(--spacing,1rem);color:var(--text);font-style:italic;border-left:0.75em solid var(--blockquote-border);text-shadow:1px 1px 2px var(--text-shadow);
+		} blockquote p,[role="presentation"] p,li>ul,li>ol {margin-bottom:0;
+		} footer,[role="contentinfo"] {padding:calc(var(--spacing,1rem) * 2) 0 calc(var(--spacing,1rem) * 4);padding-bottom:max(calc(var(--page-bottom,0px) + var(--spacing,1rem) + var(--spacing,1rem)), 0px);margin-top:calc(var(--spacing,1rem) * 3);font-family:var(--font-reader-mode,var(--font-footer,var(--font-body,var(--font-fallback))));color:var(--footer-text);text-align:center;background:var(--footer);overflow:hidden;
+		} footer>div>*,[role="contentinfo"]>div>* {margin-top:var(--spacing,1rem);float:left;text-align:justify;
+		} footer:empty,dialog:empty,nav:empty {display:none !important;
+		} /* Personalisation */
+		body [data-region],body [region],body [data-dialect],body [dialect] {display:none;
+		} body:not(.loaded) [data-region*="Default"],body:not(.loaded) [region*="Default"],body:not(.loaded) [data-dialect*="Default"],body:not(.loaded) [dialect*="Default"] {display:initial !important;
+		} /* Main Menu */
+		main nav,main [role="navigation"] {padding:var(--spacing,1rem) 0;margin:calc(var(--spacing,1rem) * 2) 0 var(--spacing,1rem);background:var(--header);
+		} main nav ul,main [role="navigation"] ul {display:flex;padding:0;list-style:none;justify-content:center;
+		} main nav ul li,main [role="navigation"] ul li {margin:0 var(--spacing,1rem);
+		} main nav ul li a,main [role="navigation"] ul li a {color:var(--link);font-weight:bold;text-decoration:none;
+		} main nav ul li a:hover,main [role="navigation"] ul li a:hover {color:var(--link-hover);text-decoration:underline;
+		} /* Navigation */
+		body>nav,body>[role="navigation"] {position:absolute;top:calc(0% + var(--page-top,0px));max-height:calc(var(--nav-height,0px) + var(--border-width,1px));width:calc(100% - var(--scrollbar-width));border-bottom:var(--border-width,1px) solid var(--border);backdrop-filter:blur(10px) brightness(0.75);z-index:var(--z-limit,10);white-space:nowrap;overflow:hidden;
+		} body>nav>*:empty,body>[role="navigation"]>* {margin:0;max-height:var(--nav-height,0px);float:left;
+		} body>nav>#menu,body>[role="navigation"]>#menu {display:none;
+		} body>nav>img.logo,body>[role="navigation"]>.logo {filter:invert(1);
+		} body>nav>.links,body>[role="navigation"]>.links {padding:var(--spacing,1rem);float:right;
+		} body>nav>#search,body>[role="navigation"]>#search {display:none;
+		} body>nav>#account,body>[role="navigation"]>#account {display:none;
+		} body>nav>#breadcrumbs,body>[role="navigation"]>#breadcrumbs {position:absolute;right:0;top:calc(var(--nav-height,0px) + var(--border-width,1px));opacity:0;
+		} body[class*="light"]>nav>img.logo,body[class*="light"]>[role="navigation"]>.logo {filter:none;
+		} /* Special Effects */
+		.invert:not(img),invert:not(img),.inverted:not(img),inverted:not(img) {color:var(--text);background-color:var(--background);filter:invert(1);
+		} .surface.invert,surface.invert {background-color:var(--surface);
+		} :focus-visible {outline:2px solid var(--link);outline-offset:2px;box-shadow:0 0 0 2px var(--background), 0 0 0 4px var(--link);
+		} :focus:not(:focus-visible) {outline:none;
+		} ::-webkit-file-upload-button {-webkit-appearance:button;font:inherit;
+		} /* Media */
+		img,svg,video,canvas,audio,iframe,embed,object {display:block;margin-top:var(--spacing,1rem);max-width:100%;background-size:cover;
+		} span>img,span>picture {display:inline-block !important;margin-bottom:0 !important;max-height:1em;width:auto;vertical-align:text-bottom;background-color:transparent !important;
+		} figure {margin:var(--spacing,1rem) 0 0;cursor:default;
+		} figure>img {width:100%;height:auto;border-radius:var(--radiuses,.25rem);
+		} figure figcaption {display:block;width:100%;color:var(--secondary);text-align:center;
+		} picture {display:block;
+		} picture img {display:block;margin-bottom:0;height:auto;width:100%;object-fit:cover;
+		} video,audio {width:100%;min-height:54px;border-radius:30px;background-color:#161616;
+		} iframe,pre,video {border:var(--border-width,1px) solid var(--border);background-color:var(--disabled);border-radius:var(--radiuses,.25rem);
+		} .icon,icon {display:inline-block;width:1.1em;height:1.1em;background-size:1.1em 1.1em;vertical-align:text-bottom;filter:invert(1);
+		} .icon *,icon * {filter:invert(1);
+		} body[class*="light"] .icon,body[class*="light"] icon {filter:none;
+		} body[class*="light"] .icon *,body[class*="light"] icon *,body[class*="light"] img.invert {filter:none !important;
+		} body[class*="light"] footer .icon,body[class*="light"] footer icon,img.invert,img.inverted {filter:invert(1);
+		} /* Forms */
+		form,form>div {margin-top:var(--spacing,1rem);
+		} form fieldset,dialog fieldset {margin-top:var(--spacing,1rem);padding:var(--spacing,1rem);border:var(--border-width,1px) solid var(--border);border-radius:var(--radiuses,.25rem);
+		} form legend,dialog legend {padding:0 calc(var(--spacing,1rem) * 0.5);color:var(--text);font-weight:bold;
+		} form label,dialog label {display:block;margin-bottom:calc(var(--spacing,1rem) * 0.25);font-weight:500;user-select:none;
+		} fieldset>div {margin-bottom:var(--spacing,1rem);
+		} fieldset div div:has(input[type="checkbox"],input[type="radio"],input[type="color"]) {display:flex;margin-bottom:calc(var(--spacing,1rem) * 0.5);align-items:center;
+		} fieldset div input[type="checkbox"],fieldset div input[type="radio"],fieldset div input[type="color"] {margin-right:calc(var(--spacing,1rem) * 0.5);margin-bottom:0;cursor:pointer;
+		} fieldset div label {margin-bottom:0;font-weight:normal;cursor:pointer;
+		} input[type="text"],input[type="email"],input[type="password"],input[type="number"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime-local"],input[type="range"],input[list],input[type="search"],input[type="tel"],input[type="url"],input[type="file"],textarea,select,progress,meter,.input {display:block;padding:calc(var(--spacing,1rem) * 0.5) calc(var(--spacing,1rem) * 0.75);margin-bottom:var(--spacing,1rem);width:100%;height:2.5em;color:var(--text);font-size:1rem;line-height:1.5;background:var(--input);background-clip:padding-box;border:var(--border-width,1px) solid var(--input-border);border-radius:var(--radiuses,.25rem);transition:border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;cursor:text;caret-color:auto;
+		} input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="number"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime-local"]:focus,input[type="range"]:focus,input[list]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="url"]:focus,textarea:focus,select:focus {color:var(--text);background:var(--input);outline:0;box-shadow:var(--input-focus-shadow);
+		} input[disabled],select[disabled],textarea[disabled] {background:var(--disabled);opacity:0.5;cursor:not-allowed !important;
+		} input[type="file"],textarea {height:auto;min-height:2.5em;resize:vertical;
+		} input[type="checkbox"]:not(.toggle),input[type="radio"] {margin-left:0.4em;transform:scale(1.39);
+		} input[type="checkbox"].toggle {appearance:none;display:inline-block;margin-left:0.4em;width:40px;height:24px;background-color:var(--secondary);white-space:nowrap;transition:400ms;transform:scale(1);border-radius:24px;cursor:pointer;
+		} input[type="checkbox"].toggle:before {position:absolute;content:"";height:16px;width:16px;left:4px;bottom:4px;background-color:var(--button-text);transition:400ms;border-radius:50%;
+		} input[type="checkbox"].toggle:checked {background-color:var(--button);
+		} input[type="checkbox"].toggle:checked:before {transform:translateX(16px);
+		} button,input[type="submit"],input[type="reset"],input[type="button"],.button {display:inline-block;margin:0 var(--border-width,1px) 0;padding:calc(var(--spacing,1rem) * 0.5) var(--spacing,1rem);line-height:1.5;color:var(--button-text);font-size:1rem;font-weight:400;text-align:center;text-decoration:none;vertical-align:text-bottom;background:var(--secondary);border:var(--border-width,1px) solid var(--input-border);border-radius:var(--radiuses,.25rem);transition:color 0.15s ease-in-out, background 0.15s ease-in-out, border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;user-select:none;cursor:pointer;
+		} button[type="reset"],button.reset,input[type="submit"].reset,input[type="reset"],input[type="button"].reset,.button.reset,#color-scheme,#reader-scheme,#nocode-mode,#consent-manage {color:var(--text);background:var(--surface);border:var(--border-width,1px) solid var(--border);
+		} button[type="submit"],button.submit,input[type="submit"],input[type="reset"].submit,input[type="button"].submit,.button.submit {color:var(--button-text);background:var(--button);border:var(--border-width,1px) solid var(--button);
+		} button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:hover {background:var(--button-hover);border:var(--border-width,1px) solid var(--button-hover);
+		} button[type="reset"]:hover,button.reset:hover,input[type="submit"].reset:hover,input[type="reset"]:hover,input[type="button"].reset:hover,.button.reset:hover {background:var(--table-header);border:var(--border-width,1px) solid var(--table-border);
+		} button:focus,input[type="submit"]:focus,input[type="reset"]:focus,input[type="button"]:focus {outline:0;box-shadow:0 0 0 0.1rem var(--link-hover);
+		} body[class*="light"] button:focus,body[class*="light"] input[type="submit"]:focus,body[class*="light"] input[type="reset"]:focus,body[class*="light"] input[type="button"]:focus,.button:focus {box-shadow:0 0 0 0.1rem var(--link-hover);
+		} button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {outline:1px dotted ButtonText;
+		} div:has([type="text"],[type="email"],[type="password"],[type="number"],[type="date"],[type="search"],[type="tel"],[type="url"],[type="file"],textarea,select)>*:not(input,textarea,select) {cursor:default;
+		} /* Code */
+		pre {position:relative;padding-left:2rem;counter-reset:line;white-space:pre-wrap;overflow-x:auto;border-radius:var(--radiuses,.25rem);
+		} pre code {display:block;padding:0em 0.5em;font-family:var(--font-monospace,Consolas),monospace;font-size:0.9em;border-radius:0;
+		} pre code::before {position:absolute;width:2rem;left:0;padding-right:0.25em;color:var(--primary);text-align:right;background-color:var(--disabled);counter-increment:line;content:counter(line);user-select:none;cursor:default;
+		} /* Flexible */
+		form .flexible div,form flexible div {padding:0 !important;
+		} .flexible,flexible {display:flex;margin-top:var(--spacing,1rem);gap:var(--spacing,1rem);
+		} .flexible>div,.flexible>flex,.flexible>aside,.flexible>[role="complementary"],flexible>div,flexible>flex,flexible>aside,flexible>[role="complementary"] {flex:1;padding:var(--spacing,1rem);
+		} .flexible>aside,.flexible>[role="complementary"],flexible>aside,flexible>[role="complementary"] {flex-grow:0.5;
+		} .flexible>.wide,.flexible>.major {flex-grow:1.5;
+		} .float.right,float.right {float:right;margin-left:var(--spacing,1rem);
+		} .align.right,align.right {text-align:right;
+		} .float.left,float.left {float:left;margin-left:var(--spacing,1rem);
+		} .block,block {display:block;width:100%;
+		} /* Responsive */
+		@media (max-width:1020px) { 
+			.desktop {display:none;
+			} main>div,[role="main"]>div,footer>div,[role="contentinfo"]>div,aside>div,main>article,main header>div,main [role="banner"]>div {padding:0 var(--spacing,1rem);margin:0 auto 0 auto !important;width:100% !important;left:0 !important;
+			} .flexible:not(.links),flexible:not(.links),flex:not(.links) {flex-direction:column !important;
+			} form .flexible,form flexible {flex-direction:row !important;
+			} dialog.banner>.consent {flex-direction:column !important;
+			}
+		} @media (max-width:768px) { 
+			.tablet {display:none;
+			} .flexible.links,flexible.links,flex.links {flex-direction:column !important;
+			} 
+		} /* Cards */
+		.cards,cards {display:flex;flex-wrap:wrap;gap:var(--spacing,1rem);margin-top:var(--spacing,1rem);
+		} .cards>div,cards>div,.cards card,cards card {flex:1 1 280px;border:var(--border-width,1px) solid var(--border);overflow:hidden;background:var(--flex);box-shadow:0 2px 4px rgba(0,0,0,0.05);border-radius:var(--radiuses,.25rem);transition:box-shadow 0.2s ease-in-out;
+		} .cards>div>img,cards>div>img,.cards card>img,cards card>img {width:100%;height:200px;object-fit:cover;border-bottom:var(--border-width,1px) solid var(--border);margin-bottom:0;
+		} .cards>div>div,cards>div>div,.cards card>div,cards card>div {padding:var(--spacing,1rem);
+		} .cards>div>div>*,cards>div>div>*,.cards card>div>*,cards card>div>* {font-size:0.95rem;margin-top:var(--spacing,1rem);
+		} .cards>div>div>*:first-child,cards>div>div>*:first-child,.cards card>div>*:first-child,cards card>div>*:first-child {font-size:1.25rem;margin-bottom:calc(var(--spacing,1rem) * 0.5);
+		} /* Accordion */
+		details {margin:var(--spacing,1rem) 0;background:var(--flex);border:var(--border-width,1px) solid var(--border);border-radius:var(--radiuses,.25rem);
+		} details summary {position:relative;padding:var(--spacing,1rem);padding-left:0;margin-left:var(--spacing,1rem);font-weight:bold;cursor:pointer;list-style:none;
+		} details summary::-webkit-details-marker {display:none;
+		} details summary::before {content:'▶';position:absolute;right:calc(var(--spacing,1rem) * 1.5);font-size:1em;transform:rotate(0deg);transition:transform 0.2s ease-in-out;
+		} details[open] summary::before {transform:rotate(90deg);
+		} details>div {padding:var(--spacing,1rem) var(--spacing,1rem) 0 var(--spacing,1rem);margin-bottom:1em;border-top:var(--border-width,1px) solid var(--border);user-select:none;
+		} details>div *:first-child {margin-top:var(--spacing,1rem);
+		} details>div *:last-child {margin-bottom:var(--spacing,1rem);
+		} details>div p,details>div ul,details>div ol {user-select:none;
+		} /* Tables */
+		table {margin-top:var(--spacing,1rem);width:100%;border-spacing:0;border-collapse:collapse;background:var(--surface);caption-side:bottom;
+		} thead th {color:var(--header-text);background:var(--table-header);vertical-align:bottom;
+		} th,td {padding:calc(var(--spacing,1rem) * 0.75);border:var(--border-width,1px) solid var(--table-border);text-align:left;vertical-align:top;
+		} tbody tr:nth-of-type(odd) {background:rgba(255,255,255,0.05);
+		} body[class*="light"] tbody tr:nth-of-type(odd) {background:rgba(0,0,0,0.1);
+		} tbody tr:hover,tfoot tr:hover {background-color:color-mix(in srgb,var(--table-header) 50%, transparent);
+		} caption {padding-top:var(--spacing,1rem);padding-bottom:var(--spacing,1rem);color:var(--secondary);text-align:left;caption-side:bottom;
+		} /* Containers */
+		.container,container {position:relative;padding-top:50% !important;margin-top:var(--spacing,1rem);width:100%;overflow:hidden;border-radius:calc(var(--radiuses,.25rem) * 2);
+		} .container>*,container>* {position:absolute;padding:0;margin:0;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radiuses,.25rem) * 2);		
+		} .container.widescreen,container.widescreen {padding-top:56% !important;
+		} .container.square,container.square {padding-top:100% !important;
+		} /* Dialog */
+		dialog {display:block;position:fixed;z-index:calc(var(--z-limit,10) - 3);color:var(--text);background:var(--surface);border:var(--border-width,1px) solid var(--border);border-radius:calc(var(--radiuses,.25rem) * 2);box-shadow:0 0 1em 0 var(--header);
+		} /* Dialog: Alert */
+		dialog.alertdialog,dialog[role="alertdialog"] {padding:var(--spacing,1rem);z-index:calc(var(--z-limit,10) - 1);margin:auto;top:calc(0% + var(--page-top,0px));bottom:0%;max-height:calc(100% - var(--page-top,0px) - var(--nav-height,0px));overflow-y:auto;outline:max(200vw, 200vh) solid rgba(0,0,0,0.5) !important;
+		} dialog.alertdialog>div,dialog[role="alertdialog"]>div {display:none;position:relative;
+		} dialog.alertdialog:has(.hide),dialog[role="alertdialog"]:has(.hide) {visibility:hidden;
+		} dialog.alertdialog>:first-child:not(.hide),dialog[role="alertdialog"]>:first-child:not(.hide) {display:block;
+		} /* Dialog: Banner */
+		dialog.banner {position:fixed;z-index:calc(var(--z-limit,10) - 2);margin:var(--spacing,1rem);top:auto;bottom:0;width:calc(100% - calc(var(--spacing,1rem) * 2) - max(var(--scrollbar-width,0px), 0px));flex-direction:row;
+		} dialog.banner>div {display:none;position:relative;padding-bottom:var(--spacing,1rem) !important;left:calc(-1 * var(--spacing,1rem));
+		} dialog.banner>div:first-child {display:flex;
+		} /* Dialog: Notifications */
+		dialog.notification,dialog[role="status"] {position:sticky;z-index:calc(var(--z-limit,10) - 0);margin:0;top:0;width:100%;border-width:0 0 1px 0;background:var(--background);visibility:hidden;
+		} body.loaded dialog.notification,body.loaded dialog[role="status"] {visibility:visible !important;
+		} dialog.notification>div,dialog[role="status"]>div {position:static;border-width:0;
+		} /* Tooltips */
+		[role="tooltip"],.tooltip {position:absolute;opacity:0;z-index:calc(var(--z-limit,10) - 0);
+		}
+	</style>
+	<!-- Main.HTML CSS Wireframe: END -->
+	<!-- # Main.HTML CSS insert additionak styles after this line. ### -->
+
+</head>
+<body>
+	<!-- Main.HTML Javascript Warning -->
+	<script>document.body.render=true</script>
+	<noscript><dialog class="notification" aria-label="JavaScript Warning" open>This website uses JavaScript for full functionality; to view all content and use all features, please enable JavaScript in your browsers settings.</dialog></noscript>
+
+	<!-- Main.HTML Dialog Banners & Alerts -->
+	<dialog role="dialog" aria-label="Banner Dialog" class="banner" open></dialog>
+	<dialog role="alertdialog" aria-label="Alert Dialog" class="alertdialog" open></dialog>
+	<dialog role="status" aria-label="Notifications" class="notification" open>
+		<div class="warning" id="notification-test-warning001" data-notification-persist="session">
+			<p>This is a long warning notification that is only dismissable via the OK button, this is persistent for the session but will appear again when returning back to this page. <button role="button" id="notification-dismiss">Ok</button></p>
+		</div>
+		<div class="amber" id="notification-test-amber001" data-notification-persist="user">
+			<p>This is a amber notification with tooltip; <span class="note">💬<span role="tooltip" class="bottom">Test bottom toolip</span></span> <button role="button" id="notification-dismiss">Close</button></p>
+		</div>
+		<div class="primary" id="notification-test-primary001" data-notification-persist="user">
+			<p><button id="notification-dismiss"></button>This notification with a link button to <a class="button" href="https://www.mainhtml.dev/" target="_blank" role="button" id="notification-dismiss">Main HTML</a> website, clicking the link closes the notification.</p>
+		</div>
+		<div class="invert" id="notification-test-invert001" data-notification-persist="user">
+			<p><button id="notification-dismiss"></button>This is a invert notification with tooltip icon; <span class="note">💬<span role="tooltip" class="bottom">Test bottom toolip</span></span> <button role="button" id="notification-dismiss">Accept</button></p>
+		</div>
+		<div class="" id="notification-test-normal001" data-notification-persist="session">
+			<p><button id="notification-dismiss"></button>This normal notification is persistent for the session, but returns when returning back to this website. <button role="button" id="notification-dismiss">Dismiss</button></p>
+		</div>
+	</dialog>	
+
+	<!-- Main.HTML Main Content -->
+	<main role="main">
+		<header role="banner">
+			<div>
+				<h1 class="title" data-min-width="720">This&nbsp;is <span class="icon main"><span role="tooltip">Main HTML</span></span> &amp;&nbsp;<span class="icon mainjs"><span role="tooltip">Main.JS</span></span> Template</h1>
+				<p>A demonstration of <span class="nbsp">Main HTML elements</span>, <span class="nbsp">Main.CSS wireframe</span> and <span class="nbsp">supported by Main.JS</span></p>
+				<p><a class="button submit" href="template.html#main-content">Skip to main content</a></p>
+				<nav role="navigation">
+					<ul>
+						<li><a href="template.html#text">Text</a></li>
+						<li><a href="template.html#code">Code</a></li>
+						<li><a href="template.html#media">Media</a></li>
+						<li><a href="template.html#tables">Tables</a></li>
+						<li><a href="template.html#interactive">Interactive</a></li>
+						<li><a href="template.html#forms">Forms</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div>
+			<section class="surface" id="text">
+				<h2 class="title"><span>Title <code class="element">&lt;<span class="html">title</span>&gt;</code> <span role="tooltip" class="right">A very large title, not the same as the page title</span></span></h1>
+				<p class="bigger"><brand>Brand <small>(Bigger Size)</small></brand> <code class="element">&lt;<span class="html">brand</span>&gt;</code></p>
+				<h2 class="h1">Headings Size 1<code class="element">&lt;<span class="html">h1</span>&gt;</code></h2>
+				<h2>Heading Size 2 <code class="element">&lt;<span class="html">h2</span>&gt;</code></h2>
+				<h3>Heading Size 3 <code class="element">&lt;<span class="html">h3</span>&gt;</code></h3>
+				<h4>Heading Size 4 <code class="element">&lt;<span class="html">h4</span>&gt;</code></h4>
+				<h5>Heading Size 5 <code class="element">&lt;<span class="html">h5</span>&gt;</code></h5>
+				<h6><span>Heading Size 6 <code class="element">&lt;<span class="html">h6</span>&gt;</code> <span role="tooltip" class="right">A tiny heading, so small its not really usable</span></span></h6>
+			</section>
+
+			<section class="surface" id="main-content">
+				<h2>Text Section <small>(surfaced)</small>: <code class="element">&lt;<span class="html">section</span> <span class="attr">class</span>=<span class="string">"surface"</span> <span class="attr">id</span>=<span class="string">"main-content"</span>&gt;</code></h2>
+				<p>This is a short sentence containing an anchor hyperlink that opens in a new tab <code class="element">&lt;<span class="html">a</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</code> to the Main HTML homepage; this <a href="project/" target="_blank">link</a>.</p>
+				
+				<h3>Common inline elements inside a paragraph <code class="element">&lt;<span class="html">p</span>&gt;&hellip;&lt;<span class="html">/p</span>&gt;</code></h3>
+				<p>This paragraph is contiguous and has no line breaks and contains <b>bold text</b> <code class="element">&lt;<span class="html">b</span>&gt;</code>,
+					<i>italic text</i> <code class="element">&lt;<span class="html">i</span>&gt;</code>,
+					<u>underlined text</u> <code class="element">&lt;<span class="html">u</span>&gt;</code>,
+					<em>emphasized text</em> <code class="element">&lt;<span class="html">em</span>&gt;</code>,
+					<strong>strong text</strong> <code class="element">&lt;<span class="html">strong</span>&gt;</code>,
+					<small>small text</small> <code class="element">&lt;<span class="html">small</span>&gt;</code>,
+					<mark>highlighted or &lt;marked&gt; text</mark> <code class="element">&lt;<span class="html">mark</span>&gt;</code>, 
+					<span class="invert">inverted text</span> <code class="element">&lt;<span class="html">invert</span>&gt;</code>,
+					<del>strikethrough or &lt;del&gt;</del> <code class="element">&lt;<span class="html">del</span>&gt;</code>,
+					<ins>inserted text</ins> <code class="element">&lt;<span class="html">ins</span>&gt;</code>,
+					<sub>subscript</sub> <code class="element">&lt;<span class="html">sub</span>&gt;</code>,
+					<sup>superscript</sup> <code class="element">&lt;<span class="html">sup</span>&gt;</code>,
+					<abbr title="Abbreviations">abbr</abbr> <code class="element">&lt;<span class="html">abbr</span> <span class="attr">title</span>=<span class="string">"&hellip;"</span>&gt;</code>.
+					<abbr>abbr</abbr> <code class="element">&lt;<span class="html">abbr</span>&gt;</code>, 
+					<brand>branded text</brand> <code class="element">&lt;<span class="html">brand</span>&gt;</code> and
+					<span class="rainbow">rainbow text</span> <code class="element">&lt;<span class="html">rainbow</span>&gt;</code> or
+					<span class="rainbow background">rainbow background</span> <code class="element">&lt;<span class="html">rainbow</span> <span class="attr">class</span>=<span class="string">"background"</span>&gt;</code>.
+					Combining abbreviations like <abbr title="HyperText Markup Language">HTML</abbr>  <code class="element">&lt;<span class="html">abbr</span>&gt;</code> are useful with <sub>subscript</sub> and <sup>superscript</sup> for specific notations like H<sub>2</sub>O or E=mc<sup>2</sup>. Definitions: <dfn>Semantic HTML</dfn>  <code class="element">&lt;<span class="html">dfn</span>&gt;</code> refers to using HTML elements according to their meaning.</p>
+				
+				<h4>Other inline &amp; breaking elements:</h4>
+				<p>Inline unclassed span <code class="element">&lt;<span class="html">span</span>&gt;</code> element here between open <code>&amp;ldquo;</code> and close <code>&amp;rdquo;</code> quotation marks and &ldquo;<span>this is an span.</span>&rdquo; 
+					Using the <code class="element">&lt;<span class="html">wbr</span>&gt;</code> element to suggest a word break: crazysuperlonglongwordherewith<wbr>potentialbreakpointathepotentialbreakwordpoint and split long words, you can also prevent breaking by inserting <code>&amp;nbsp;</code> non-breaking spaces between words, followed by a line break <code class="element">&lt;<span class="html">br</span>&gt;</code>.<br>
+					This sentence starts on new line within the same paragraph and tests bidirectional text; BiDi text <code class="element">&lt;<span class="html">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</code> text between open <code>&amp;lsquo;</code> and close <code>&amp;rsquo;</code> single quotation marks: &lsquo;<bdo dir="rtl">This text will be right-to-left.</bdo>&rsquo; <em>(this text should render <abbr title="Right to left">RTL</abbr>).</em>
+					Isolated bidi: <bdi>تست</bdi> (this Arabic text should render correctly within LTR context)</p>
+				
+				<p class="br">This paragraph hugs the line above it, emulating a <code class="element">&lt;<span class="html">br</span>&gt;</code> line break, followed by a <code class="element">&lt;<span class="html">hr</span>&gt;</code> horizontal ruler;</p>
+				<hr>
+				
+				<p>A sample <code class="element">&lt;<span class="html">samp</span>&gt;</code> output: <samp>File: Sample Found.</samp>
+					<br>Here the x is a variable <code class="element">&lt;<span class="html">var</span>&gt;</code>: <var>x</var> = 10;
+					<br>Time <code class="element">&lt;<span class="html">time</span>&gt;</code>: <time datetime="2025-06-01">June 1, 2025</time>
+					<br>Date &amp; Time <code class="element">&lt;<span class="html">time</span> <span class="attr">datetime</span>=<span class="string">"2025-06-01T10:00:00Z"</span>&gt;</code>: <time datetime="2025-06-01T10:00:00Z">June 1, 2025, 10:00 AM UTC</time></p>
+
+				<h3>Here are some quotes</h3>
+				<p>Here's a cited <code class="element">&lt;<span class="html">cite</span>&gt;</code> quotation: first an <q cite="template.html">This is a short inline quote.</q>  <code class="element">&lt;<span class="html">q</span>&gt;</code> and then a <code class="element">&lt;<span class="html">blockquote</span>&gt;</code>;</p>
+				<blockquote role="presentation" cite="https://www.andyfutcher.com/developer/">
+					<p>A wise developer once told me <q>the introduction of the <code class="element">&lt;<span class="html">main</span>&gt;</code> element <em>importance cannot be overstated</em>.</q> Some might think that's an exaggeration, but I think it's <em>very</em> accurate.</p>
+					<p class="align right"><cite>— Andy Futcher <code class="element">&lt;<span class="html">cite</span>&gt;</code></cite></p>
+				</blockquote>
+
+				<h3>Address and Links</h3>
+				<p>This is an address <code class="element">&lt;<span class="html">address</span>&gt;</code> followed by telephone number <code class="element">&lt;<span class="html">a</span> <span class="attr">href</span>=<span class="string">"tel:"</span>&gt;</code> and email address <code class="element">&lt;<span class="html">a</span> <span class="attr">href</span>=<span class="string">"mailto:"</span>&gt;</code>.</p>
+				<address>
+					<p>123 Main St
+						<br>Anytown, 1234
+						<br>Australia
+					</p>					
+				</address> 
+				<p class="br">Tel: <a href="tel:555 123 4567">555 123 4567</a>
+					<br>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+			</section>
+			<hr>
+		</div>
+
+		<picture>
+			<figure>
+				<img src="https://www.mainhtml.dev/main/theme/template/image-full-width.svg" width="1200" height="500" alt="Full width picture image" loading="lazy">
+				<figcaption>Full width picture <code class="element">&lt;<span class="html">picture</span>&gt;</code></figcaption>
+			</figure>
+		</picture>
+
+		<div>
+			<hr>
+			<section class="surface">
+				<h2>Text Section <small>(continued)</small>:</h2>
+				<p>Here are some icons with tooltips with an tab space <code>&amp;emsp;</code> before each, these support small inline sizes &amp; <code>&amp;amp;</code> inherit line heights too:
+					<br>&emsp;<small>Small: <span class="icon linkedin"><span role="tooltip">Linkedin</span></span> <span class="icon youtube"><span role="tooltip">Youtube</span></span> <span class="icon facebook"><span role="tooltip">Facebook</span></span> <span class="icon instagram"><span role="tooltip">Instagram</span></span> <span class="icon bsky"><span role="tooltip">BlueSky</span></span> <span class="icon github"><span role="tooltip">GitHub</span></span> <span class="icon whatsapp"><span role="tooltip">WhatsApp</span></span> <span class="icon discord"><span role="tooltip">Discord</span></span> <span class="icon main"><span role="tooltip">Main HTML</span></span> <span class="icon mainjs"><span role="tooltip">Main.JS</span></span> </small>
+					<br>&emsp;Normal: <span class="icon linkedin"><span role="tooltip">Linkedin</span></span> <span class="icon youtube"><span role="tooltip">Youtube</span></span> <span class="icon facebook"><span role="tooltip">Facebook</span></span> <span class="icon instagram"><span role="tooltip">Instagram</span></span> <span class="icon bsky"><span role="tooltip">BlueSky</span></span> <span class="icon github"><span role="tooltip">GitHub</span></span> <span class="icon whatsapp"><span role="tooltip">WhatsApp</span></span> <span class="icon discord"><span role="tooltip">Discord</span></span> <span class="icon main"><span role="tooltip">Main HTML</span></span> <span class="icon mainjs"><span role="tooltip">Main.JS</span></span> </span>
+					<br>&emsp;<span class="big">Big: <span class="icon linkedin"><span role="tooltip">Linkedin</span></span> <span class="icon youtube"><span role="tooltip">Youtube</span></span> <span class="icon facebook"><span role="tooltip">Facebook</span></span> <span class="icon instagram"><span role="tooltip">Instagram</span></span> <span class="icon bsky"><span role="tooltip">BlueSky</span></span> <span class="icon github"><span role="tooltip">GitHub</span></span> <span class="icon whatsapp"><span role="tooltip">WhatsApp</span></span> <span class="icon discord"><span role="tooltip">Discord</span></span> <span class="icon main"><span role="tooltip">Main HTML</span></span> <span class="icon mainjs"><span role="tooltip">Main.JS</span></span> </span>
+					<br>&emsp;<span class="bigger">Bigger: <span class="icon linkedin"><span role="tooltip">Linkedin</span></span> <span class="icon youtube"><span role="tooltip">Youtube</span></span> <span class="icon facebook"><span role="tooltip">Facebook</span></span> <span class="icon instagram"><span role="tooltip">Instagram</span></span> <span class="icon bsky"><span role="tooltip">BlueSky</span></span> <span class="icon github"><span role="tooltip">GitHub</span></span> <span class="icon whatsapp"><span role="tooltip">WhatsApp</span></span> <span class="icon discord"><span role="tooltip">Discord</span></span> <span class="icon main"><span role="tooltip">Main HTML</span></span> <span class="icon mainjs"><span role="tooltip">Main.JS</span></span> </span>
+				</p>
+				
+				<h3>Definition lists <code class="element">&lt;<span class="html">dl</span>&gt;</code></h3>
+				<dl>
+					<dt>Definition Term <code class="element">&lt;<span class="html">dt</span>&gt;</code></dt>
+					<dd>Definition Description <code class="element">&lt;<span class="html">dd</span>&gt;</code></dd>
+				</dl>
+
+				<h3>Here are some lists:</h3>
+				<p>First ordered <code class="element">&lt;<span class="html">ol</span>&gt;</code> then unordered; <code class="element">&lt;<span class="html">ul</span>&gt;</code></p>
+				<ol>
+					<li>Ordered list item 1 <code class="element">&lt;<span class="html">l1</span>&gt;</code></li>
+					<li>Ordered list item 2 <code class="element">&lt;<span class="html">l1</span>&gt;</code></li>
+					<li>Ordered list item 3 <code class="element">&lt;<span class="html">l1</span>&gt;</code></li>
+				</ol>
+				<ul>
+					<li>Unordered list item 1 <code class="element">&lt;<span class="html">l1</span>&gt;</code></li>
+					<li>Unordered list item 2 <code class="element">&lt;<span class="html">l1</span>&gt;</code></li>
+					<li>Unordered list item 3 <code class="element">&lt;<span class="html">l1</span>&gt;</code></li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Text in an unsurfaced <code class="element">&lt;<span class="html">section</span>&gt;</code></h2>
+				<p>An unsurfaced section omits the <em>surface</em> <code class="element"><span class="attr">class</span>=<span class="string">"surface"</span></code> class attribute from the <code class="element">&lt;<span class="html">section</span>&gt;&hellip;&lt;<span class="html">/section</span>&gt;</code> container.</p>
+				<h3>Here is the large closed paragraph</h3>
+				<p>The introduction of main <code class="element">&lt;<span class="html">main</span>&gt;</code> element in HTML5 <code class="element">&lt;!<span class="html">DOCTYPE</span> <span class="attr">html</span>&gt;</code> was a real game-changer and brought <strong><em>semantic clarity</em></strong> to an HTML document. 
+					Before main, we were lost in a sea of generic divider <code class="element">&lt;<span class="html">div</span>&gt;</code> elements, but now we can confidently say, <q>Here lies the dominant content of the body <code class="element">&lt;<span class="html">body</span>&gt;</code>.</q>
+					This isn't just a suggestion; it's a bold statement of purpose; you could even describe it as <mark>"the <em>main content</em> of the document."</mark>
+					The main element so much more than just a block-level element; it's a landmark role and a real hero for accessibility and <abbr title="Search Engine Optimization"><strong>SEO</strong></abbr> too. 
+					It helps screen readers and other assistive technologies understand the structure of a page. 
+					A user can easily skip to the main content, bypassing headers <code class="element">&lt;<span class="html">header</span>&gt;</code> and navigation <code class="element">&lt;<span class="html">nav</span>&gt;</code>.</p>
+			</section>
+		</div>
+
+		<hr>
+			
+		<div>
+			<section id="code">
+				<h2>Code Section:</h2>
+				<p>An inline code <code class="element">&lt;<span class="html">code</span>&gt;</code> embedded in a sample <code class="element">&lt;<span class="html">samp</span>&gt;</code>: <samp>&lt;code class="element">&lt;span class="html">code&lt;/span>&lt;/code></samp></p>
+			</section>
+			
+			<section class="surface">
+				<h3>Here is some HTML: </h3>
+				<pre><code class="text"><span class="element">&lt;<span class="html">section</span> <span class="attr">id</span>=<span class="string">"main-content"</span> <span class="attr">class</span>=<span class="string">"surface"</span>&gt;</span></code><code class="text">	<span class="element">&lt;<span class="html">h2</span>&gt;</span>Heading Number Size Two<span class="element">&lt;<span class="html">/h2</span>&gt;</span></code><code class="text">	<span class="element">&lt;<span class="html">p</span>&gt;</span>This is paragraph contains a link to <span class="element">&lt;<span class="html">a</span> <span class="attr">href</span>=<span class="string">"https://www.mainhtml.dev/"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>Main HTML<span class="element">&lt;<span class="html">/a</span>&gt;</span> that opens in a new tab.<span class="element">&lt;<span class="html">/p</span>&gt;</span></code><code class="text"><span class="element">&lt;<span class="html">/section</span>&gt;</span></code></pre>
+				<p class="br"><small>Preformatted block <code class="element">&lt;<span class="html">pre</span>&gt;</code> with code <code class="element">&lt;<span class="html">code</span>&gt;</code>:</small></p>
+				
+				<h3>Here is some CSS:</h3>
+				<pre><code><span class="selector">body</span> <span class="selector">{</span></code><code class="text">	<span class="rule">font-family</span>: <span class="string">"Roboto Serif"</span>,<span class="value">sans-serif</span>;</code><code class="text">	<span class="rule">line-height</span>: <span class="value">1.5</span>;</code><code><span class="selector">}</span></code></pre>
+				<p class="br">You can copy the code above using keyboard  <code class="element">&lt;<span class="html">kbd</span>&gt;</code> shortcut <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+			</section>
+		</div>
+
+		<hr>
+			
+		<div>
+			
+
+			<section id="media">
+				<h2>Media Embedding</h2>
+				
+				<h3>Standard Image <code class="element">&lt;<span class="html">img</span>&gt;</code></h3>
+				<figure>
+					<img src="https://www.mainhtml.dev/main/theme/template/image-standard.svg" width="1200" height="400" alt="Standard Image" loading="lazy">
+					<figcaption>Figcaption <code class="element">&lt;<span class="html">figure</span>&gt;</code> for the standard image</figcaption>
+				</figure>
+
+				<h3>Audio <code class="element">&lt;<span class="html">audio</span>&gt;</code></h3>
+				<audio controls preload="none">
+					<source src="https://www.mainhtml.dev/main/theme/template/audio.ogg" type="audio/ogg">
+					Your browser does not support the audio element.
+				</audio>
+
+				<h3>Video <code class="element">&lt;<span class="html">video</span>&gt;</code></h3>
+				<video controls width="100%" preload="none" poster="https://www.mainhtml.dev/main/theme/template/video-poster.svg">
+					<source src="https://www.mainhtml.dev/main/theme/template/video.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<p class="br"><small>Note: Actual video source not embedded to keep file size small. This is a placeholder.</small></p>
+
+				<h3>Embedded Content <code class="element">&lt;<span class="html">iframe</span>&gt;</code></h3>
+				<iframe src="https://example.com/" width="100%" height="420" title="Example Iframe" loading="lazy"></iframe>
+				<p class="br"><small>Note: Iframe to example.com. Some sites may block embedding.</small></p>
+
+				<h3>Slideshow <code class="element">&lt;<span class="html">slideshow</span>&gt;</code></h3>
+				<div class="container slideshow" data-slideshow-duration="30s" data-slideshow-transition="500ms">
+					<img src="https://www.mainhtml.dev/main/theme/template/image-slide-1.svg" width="1200" height="675" alt="Slideshow Example Image 1" loading="lazy">
+					<img src="https://www.mainhtml.dev/main/theme/template/image-slide-2.svg" width="1200" height="675" alt="Slideshow Example Image 2" loading="lazy">
+					<img src="https://www.mainhtml.dev/main/theme/template/image-slide-3.svg" width="1200" height="675" alt="Slideshow Example Image 3" loading="lazy">
+					<!-- <img src="https://www.mainhtml.dev/main/theme/template/image-slide-4.svg" width="1200" height="675" alt="Slideshow Example Image 4" loading="lazy"> -->
+				</div>
+			</section>
+		</div>
+
+		<hr>
+			
+		<div>
+			<section id="tables">				
+				<h2>Tables <code class="element">&lt;<span class="html">table</span>&gt;</code></h2>
+				<table>
+					<caption>Employee Data - Q2 2025</caption>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Department</th>
+							<th>Salary</th>
+							<th>Start Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>001</td>
+							<td>Alice Wonderland</td>
+							<td>Engineering</td>
+							<td>$95,000</td>
+							<td>2023-01-15</td>
+						</tr>
+						<tr>
+							<td>002</td>
+							<td>Bob The Builder</td>
+							<td>Operations</td>
+							<td>$72,000</td>
+							<td>2022-07-01</td>
+						</tr>
+						<tr>
+							<td>003</td>
+							<td>Charlie Brown</td>
+							<td>Marketing</td>
+							<td>$80,000</td>
+							<td>2023-05-20</td>
+						</tr>
+						<tr>
+							<td>004</td>
+							<td>Diana Prince</td>
+							<td>Human Resources</td>
+							<td>$78,000</td>
+							<td>2024-02-10</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3">Total Employees: 4</td>
+							<td colspan="2">Average Salary: Approx. $81,250</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+
+			<hr>
+
+			<section class="surface" id="flex-section">
+				<h2>Even Flexible Columns <code class="element">&lt;<span class="html">flexible</span>&gt;</code></h2>
+				<h3>Thin Columns</h3>
+				<div class="flexible">
+					<div>
+						<h3>Column 1</h3>
+						<p lang="la">Lorem ipsum Optima demonstratio elementorum HTML "Main", structurae filariae Main.CSS, et sustentatione Main.JS. Introductio elementi "main" in HTML5 vere mutavit omnia et claritatem semanticam documento HTML attulit.</p>
+						<p lang="la">Ante "main", in mari elementorum divisoriorum genericorum immersi eramus, sed nunc confidenter dicere possumus, "Hic iacet contentum praevalens corporis." Haec non est modo suggestio; est audax declaratio propositi; etiam describere posses ut "contentum principale documenti."</p>
+					</div>
+					<div>
+						<h3>Column 2</h3>
+						<p lang="la">Elementum principale multo plus quam elementum in gradu quadrati; munus insignis est et verus heros pro accessibilitate et SEO quoque. Lectoribus scrinii aliisque technologiarum adiuvantium adiuvat ut structuram paginae intellegant. </p>
+						<p lang="la">Haec est brevis sententia continens nexum hypertextualem ancoralem qui in nova scheda ad paginam primam HTML principalem aperitur; usor facile ad contentum principale transire potest, inscriptiones et navigationem praetermittens.</p>
+					</div>
+					<div>
+						<h3>Column 3</h3>
+						<p lang="la">Sapiens quidam programmator mihi olim dixit introductionem elementi "important" non posse nimis exaggerari. Quidam fortasse existiment id esse exaggerationem, sed mihi videtur accuratissima esse.</p>
+						<hr><p><strong>English Section:</strong><br>These <em>Lorem ipsum</em> are all in elements tagged as latin <code class="element">&lt;<span class="html">p</span> <span class="attr">lang</span>=<span class="string">"la"</span>&gt;</code> attribute, this is best for accessibility and translators.</p>
+					</div>
+				</div>
+				<h3>Wide Columns</h3>
+				<div class="flexible">
+					<div>
+						<h3>Latin Column 1</h3>
+						<p lang="la">Lorem ipsum Optima demonstratio elementorum HTML "Main", structurae filariae Main.CSS, et sustentatione Main.JS. Introductio elementi "main" in HTML5 vere mutavit omnia et claritatem semanticam documento HTML attulit.</p>
+						<p lang="la">Ante "main", in mari elementorum divisoriorum genericorum immersi eramus, sed nunc confidenter dicere possumus, "Hic iacet contentum praevalens corporis." Haec non est modo suggestio; est audax declaratio propositi; etiam describere posses ut "contentum principale documenti."</p>
+					</div>
+					<div>
+						<h3>Latin Column 2</h3>
+						<p lang="la">Elementum principale multo plus quam elementum in gradu quadrati; munus insignis est et verus heros pro accessibilitate et SEO quoque. Lectoribus scrinii aliisque technologiarum adiuvantium adiuvat ut structuram paginae intellegant. </p>
+						<p lang="la">Haec est brevis sententia continens nexum hypertextualem ancoralem qui in nova scheda ad paginam primam HTML principalem aperitur; usor facile ad contentum principale transire potest, inscriptiones et navigationem praetermittens.</p>
+					</div>
+				</div>
+			</section>
+
+			<hr>
+
+			<section>
+				<h2>Uneven Flexible Columns <code class="element">&lt;<span class="html">flexible</span>&gt;</code></h2>
+				<h3>Thin Surfaced Column <code class="element">&lt;<span class="html">aside</span> <span class="attr">class</span>=<span class="string">"surface"</span>&gt;</code></h3>
+				<div class="flexible">
+					<div>
+						<h3>Column 1 Examples</h3>
+						<p lang="la">Lorem ipsum Optima demonstratio elementorum HTML "Main", structurae filariae Main.CSS, et sustentatione Main.JS. Introductio elementi "main" in HTML5 vere mutavit omnia et claritatem semanticam documento HTML attulit.</p>
+						<p lang="la">Ante "main", in mari elementorum divisoriorum genericorum immersi eramus, sed nunc confidenter dicere possumus, "Hic iacet contentum praevalens corporis." Haec non est modo suggestio; est audax declaratio propositi; etiam describere posses ut "contentum principale documenti."</p>
+						<hr><p><strong>English Section:</strong><br>These <em>Lorem ipsum</em> are all in elements tagged as latin <code class="element">&lt;<span class="html">p</span> <span class="attr">lang</span>=<span class="string">"la"</span>&gt;</code> attribute, this is best for accessibility and translators.</p>
+					</div>
+					<aside role="complementary" class="surface">
+						<h3>Column 2 Examples</h3>
+						<p lang="la">Elementum principale multo plus quam elementum in gradu quadrati; munus insignis est et verus heros pro accessibilitate et SEO quoque. Lectoribus scrinii aliisque technologiarum adiuvantium adiuvat ut structuram paginae intellegant. </p>
+						<p lang="la">Haec est brevis sententia continens nexum hypertextualem ancoralem qui in nova scheda ad paginam primam HTML principalem aperitur; usor facile ad contentum principale transire potest, inscriptiones et navigationem praetermittens.</p>
+					</aside>
+				</div>
+				<h3>Thin Complementary Column <code class="element">&lt;<span class="html">div</span> <span class="attr">role</span>=<span class="string">"complementary"</span>&gt;</code></h3>
+				<div class="flexible">
+					<div role="complementary">
+						<h4>Latin Column 1</h4>
+						<p lang="la">Lorem ipsum Optima demonstratio elementorum HTML "Main", structurae filariae Main.CSS, et sustentatione Main.JS. Introductio elementi "main" in HTML5 vere mutavit omnia et claritatem semanticam documento HTML attulit.</p>
+						<p lang="la">Ante "main", in mari elementorum divisoriorum genericorum immersi eramus, sed nunc confidenter dicere possumus, "Hic iacet contentum praevalens corporis." Haec non est modo suggestio; est audax declaratio propositi; etiam describere posses ut "contentum principale documenti."</p>
+						
+					</div>
+					<div class="wide">
+						<h4>Latin Column 2 <code class="element">&lt;<span class="html">div</span> <span class="attr">class</span>=<span class="string">"wide"</span>&gt;</code> Examples</h4>
+						<p lang="la">Ipsum lorem Elementum principale multo plus quam elementum in gradu quadrati; munus insignis est et verus heros pro accessibilitate et SEO quoque. Lectoribus scrinii aliisque technologiarum adiuvantium adiuvat ut structuram paginae intellegant. </p>
+						<p lang="la">Haec est brevis sententia continens nexum hypertextualem ancoralem qui in nova scheda ad paginam primam HTML principalem aperitur; usor facile ad contentum principale transire potest, inscriptiones et navigationem praetermittens.</p>
+						<hr><p><strong>English Section:</strong><br>These <em>Lorem ipsum</em> are all in elements tagged as latin <code class="element">&lt;<span class="html">p</span> <span class="attr">lang</span>=<span class="string">"la"</span>&gt;</code> attribute, this is best for accessibility and translators.</p>
+					</div>
+				</div>
+
+				<h2>Flex Text 2 Columns (2nd Wide)</h2>
+				<div class="flexible">
+					<aside role="complementary">
+						<h3>Latin Column 1</h3>
+						<p lang="la">Lorem ipsum Optima demonstratio elementorum HTML "Main", structurae filariae Main.CSS, et sustentatione Main.JS. Introductio elementi "main" in HTML5 vere mutavit omnia et claritatem semanticam documento HTML attulit.</p>
+						<p lang="la">Ante "main", in mari elementorum divisoriorum genericorum immersi eramus, sed nunc confidenter dicere possumus, "Hic iacet contentum praevalens corporis." Haec non est modo suggestio; est audax declaratio propositi; etiam describere posses ut "contentum principale documenti."</p>
+					</aside>
+					<div>
+						<h3>Latin Column 2 with Image</h3>
+						<p>These <em>Lorem ipsum</em> are all in elements tagged as latin <code class="element">&lt;<span class="html">p</span> <span class="attr">lang</span>=<span class="string">"la"</span>&gt;</code> attribute, this is best for accessibility and translators.</p>
+						<figure>
+							<img src="https://www.mainhtml.dev/main/theme/template/image-flex-area.svg" width="1200" height="400" alt="Flexible Area Image" loading="lazy">
+							<figcaption>Figcaption for the standard image.</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<hr>
+			
+		<div>
+			<section class="surface" id="interactive">
+				<h2>Interactive Modules</h2>
+
+				<h3>Accordion <code class="element">&lt;<span class="html">details</span>&gt;</code></h3>
+				<details open>
+					<summary>Accordion Item 1 <code class="element">&lt;<span class="html">summary</span>&gt;</code> (Initially <code><span class="attr">open</span></code>)</summary>
+					<div>
+						<p>This is the content for the first accordion item. Most of the time these are hidden by default and revealed when the summary element is clicked, unless like in this case, the <code class="html">&lt;details&gt;</code> container includes the <code class="attr">open</code> attribute, then it will be automatically revealed.</p>
+						<p>This is the content For a second paragraph in the accordion!</p>
+					</div>
+				</details>
+				<details>
+					<summary>Accordion Item 2</summary>
+					<div>
+						<p>Here's some more content for the second item. You can put any HTML structure you like in here, such as paragraphs, lists, or images.</p>
+						<ul>
+							<li>List item A</li>
+							<li>List item B</li>
+						</ul>
+					</div>
+				</details>
+				<details>
+					<summary>Accordion Item 3</summary>
+					<div>
+						<p>This item could be styled to appear open by default if needed, or you could use JavaScript to manage an 'open' attribute for more complex state management. For this demo, it behaves like the others.</p>
+					</div>
+				</details>
+			</section>
+
+			<hr>
+
+			<section>
+				<h3>Showcases / Action Cards <code class="element">&lt;<span class="html">cards</span>&gt;</code></h3>
+				<div class="cards">
+					<div>
+						<img src="https://www.mainhtml.dev/main/theme/template/image-card-1.svg" width="1200" height="675" alt="Card image" loading="lazy">
+						<div>
+							<h4>Card Title One</h4>
+							<p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="template.html#interactive" class="button">Learn More</a>
+						</div>
+					</div>
+					<div>
+						<img src="https://www.mainhtml.dev/main/theme/template/image-card-2.svg" width="1200" height="675" alt="Card image" loading="lazy">
+						<div>
+							<h4>Card Title Two</h4>
+							<p>This card has supporting text below as a natural lead-in to additional content. It's also quite a bit longer and should automatically adjust the adjacent cards.</p>
+							<a href="template.html#interactive" class="button">Read Article</a>
+						</div>
+					</div>
+					<div>
+						<div>
+							<h4>Card Title Three (No Image)</h4>
+							<p>This card demonstrates content without a top image. It uses a bit more text to fill the space.</p>
+							<p><small>Last updated 3 mins ago</small></p>
+							<a href="template.html#interactive" class="button">View Details</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr>
+		</div>
+
+		<picture>
+			<img class="inverted" src="https://www.mainhtml.dev/main/theme/template/image-inverted.svg" width="1200" height="400" alt="Inverted Captionless Image" loading="lazy">
+		</picture>
+
+		<hr>
+
+		<div>
+			<div class="surface" id="forms">
+				<h2>Forms <code class="element">&lt;<span class="html">form</span>&gt;</code></h2>
+				<p>These are examples only, they cannot submit any content to your server without adjusting the <code class="attr">action</code> parameter in the form element.</p>
+				<form action="#" method="post" role="form" aria-label="Forms Purpose Short Description">
+					<fieldset>
+						<legend>Personal Information</legend>
+						<div>
+							<label for="fullname">Full Name: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</code></label>
+							<input type="text" id="fullname" name="fullname" placeholder="Firstname Lastname" required>
+						</div>
+						<div>
+							<label for="email">Email Address:<code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"email"</span>&gt;</code></label>
+							<input type="email" id="email" name="email" placeholder="you@example.com" required>
+						</div>
+						<div>
+							<label for="password">Password:<code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"password"</span>&gt;</code></label>
+							<input type="password" id="password" name="password" required>
+						</div>
+						<div>
+							<label for="birthdate">Birth Date:<code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"date"</span>&gt;</code></label>
+							<input type="date" id="birthdate" name="birthdate">
+						</div>
+						<div>
+							<label for="localtel">Local Telephone:<code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"tel"</span>&gt;</code></label>
+							<input type="tel" id="localtel" name="localtel" pattern="[0-9()\-\s]{6,15}" minlength="11" maxlength="16" placeholder="555 123 4567">
+						</div>
+						<label for="tel">International Telephone:</label>
+						<div class="flexible">
+							<div role="complementary">
+								<select id="country_code" name="country_code">
+									<option value="+1" selected>🇺🇸 USA</option>
+									<option value="+1">🇨🇦 Canada</option>
+									<option value="+44">🇬🇧 UK</option>
+									<option value="+61">🇦🇺 Australia</option>
+									<option value="+86">🇨🇳 China</option>
+									<option value="+91">🇮🇳 India</option>
+									<option value="+49">🇩🇪 Germany</option>
+									<option value="+33">🇫🇷 France</option>
+									<option value="+55">🇧🇷 Brazil</option>
+									<option value="+52">🇲🇽 Mexico</option>
+									<option value="+64">🇳🇿 New Zealand</option>
+									<option value="+65">🇸🇬 Singapore</option>
+									<option value="+353">🇮🇪 Ireland</option>
+									<option value="+82">🇰🇷 South Korea</option>
+									<option value="+81">🇯🇵 Japan</option>
+								</select>
+							</div>
+							<div class="wide">
+								<input type="tel" id="tel" name="tel" pattern="[0-9()\-\s]{6,15}" minlength="11" maxlength="16" placeholder="555 123 4567">
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Preferences</legend>
+						<div>
+							<div>
+								<label for="search">Search: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"search"</span>&gt;</code></label>
+								<input type="search" id="search" name="search" placeholder="Search field">
+							</div>
+							<div>
+								<label for="country">Select: <code class="element">&lt;<span class="html">select</span>&gt;</code></label>
+								<select id="country" name="country">
+									<option value="">--Please choose an option--</option>
+									<option value="us">🇺🇸 United States</option>
+									<option value="ca">🇨🇦 Canada</option>
+									<option value="gb">🇬🇧 United Kingdom</option>
+									<option value="au">🇦🇺 Australia</option>
+								</select>
+							</div>
+						</div>
+						<div>
+							<p>Checkboxes: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</code></p>
+							<div>
+								<input type="checkbox" id="choices_checked" name="choices" value="Unchecked">
+								<label for="choices_checked">Unchecked</label>
+							</div>
+							<div>
+								<input type="checkbox" id="choices_unchecked" name="choices" value="Checked" checked>
+								<label for="choices_unchecked">Checked</label>
+							</div>
+							<div>
+								<input type="checkbox" id="choices_unchecked_disabled" name="choices" value="Disabled" disabled>
+								<label for="choices_unchecked_disabled">Disabled</label>
+							</div>
+							<div>
+								<input type="checkbox" id="choices_checked_disabled" name="choices" value="Disabled Checked" checked disabled>
+								<label for="choices_checked_disabled">Disabled Checked</label>
+							</div>
+							<p>Toggles: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">class</span>=<span class="string">"toggle"</span>&gt;</code></p>
+							<div>
+								<input type="checkbox" class="toggle" id="toggle_on" name="toggles" value="Toggle On" checked>
+								<label for="toggle_on">Toggle On</label>
+							</div>
+							<div>
+								<input type="checkbox" class="toggle" id="toggle_off" name="toggles" value="Toggle Off">
+								<label for="toggle_off">Toggle Off</label>
+							</div>
+							<div>
+								<input type="checkbox" class="toggle" id="toggle_on_disabled" name="toggles" value="Toggle Disabled" disabled checked>
+								<label for="toggle_on_disabled">Toggle On Disabled</label>
+							</div>
+							<div>
+								<input type="checkbox" class="toggle" id="toggle_off_disabled" name="toggles" value="Toggle Disabled" disabled>
+								<label for="toggle_off_disabled">Toggle Off Disabled</label>
+							</div>
+						</div>
+						<div>
+							<p>Radio Buttons: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"radio"</span>&gt;</code></p>
+							<div>
+								<input type="radio" id="contact_email" name="contact_method" value="email" checked>
+								<label for="contact_email">Email</label>
+							</div>
+							<div>
+								<input type="radio" id="contact_phone" name="contact_method" value="phone">
+								<label for="contact_phone">Phone</label>
+							</div>
+						</div>
+						<div>
+							<p>Color Pickers: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"color"</span>&gt;</code></p>
+							<div>
+								<input type="color" id="color" name="color" value="#000000">
+								<label for="color">Colors</label>
+							</div>
+							<p>List Pickers: <code class="element">&lt;<span class="html">input</span> <span class="attr">list</span>=<span class="string">"datalist"</span>&gt;</code></p>
+							<div>
+								<label for="datalist-browsers">Browser Picker example: <code class="element">&lt;<span class="html">datalist</span>&gt;</code></label>
+								<input list="browsers" id="datalist-browsers" name="browser">
+								<datalist id="browsers">
+									<option value="Edge">
+									<option value="Firefox">
+									<option value="Chrome">
+									<option value="Opera">
+									<option value="Safari">
+								</datalist>
+							</div>
+							<p>Ranges (1-100):</p>
+							<div>
+								<label for="quantity">Number: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"number"</span>&gt;</code></label>
+								<input type="number" id="quantity" name="quantity" min="1" max="100" value="25">
+							</div>
+							<div>
+								<label for="range">Range: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"range"</span>&gt;</code></label>
+								<input type="range" id="range" name="range" min="0" max="100" value="25">
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Dates and Times:</legend>
+						<div>
+							<div>
+								<label for="month">Month: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"month"</span>&gt;</code></label>
+								<input type="month" id="month" name="month">
+							</div>
+
+							<div>
+								<label for="week">Week: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"week"</span>&gt;</code></label>
+								<input type="week" id="week" name="week">
+							</div>
+
+							<div>
+								<label for="time">Time: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"time"</span>&gt;</code></label>
+								<input type="time" id="time" name="time">
+							</div>
+
+							<div>
+								<label for="datetime-local">Local Time: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"datetime-local"</span>&gt;</code></label>
+								<input type="datetime-local" id="datetime-local" name="datetime-local">
+							</div>
+
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Message &amp; Attachments</legend>
+						<div>
+							<label for="message">Your Message: <code class="element">&lt;<span class="html">textarea</span>&gt;</code></label>
+							<textarea id="message" name="message" rows="5" placeholder="Enter your message here..." autocorrect="on"></textarea>
+						</div>
+						<div>
+							<label for="attachment">Attachment: <code class="element">&lt;<span class="html">input</span> <span class="attr">type</span>=<span class="string">"file"</span>&gt;</code></label>
+							<input type="file" id="attachment" name="attachment">
+						</div>
+						<div>
+							<label for="progress">Upload progress: <code class="element">&lt;<span class="html">progress</span>&gt;</code></label>
+							<progress id="progress" value="70" max="100">70%</progress>
+						</div>
+						<div>
+							<label for="storage">Storage space: <code class="element">&lt;<span class="html">meter</span>&gt;</code></label>
+							<meter id="storage" value="2" min="0" max="10" low="3" high="7" optimum="8">2 of 10</meter>
+						</div>
+					</fieldset>
+
+					<div>
+						<input type="submit" value="Submit Form" role="button" id="test-submit">
+						<input type="button" value="Custom Button" role="button" id="test-button">
+						<input type="reset" value="Reset Form" role="button" id="test-reset">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<hr>
+
+		<article>
+			<div>
+				<h1>Separate Article <code class="element">&lt;<span class="html">article</span>&gt;</code></h1>
+				<p>Some developers might still be using #main <code class="element">&lt;<span class="html">div</span> <span class="attr">id</span>=<span class="string">"main"</span>&gt;</code> it's time to use the main element instead! Using Main <code class="element">&lt;<span class="html">main</span>&gt;</code> is not only best practice but also more descriptive. Think of it this way: main is like the <strong><em>keynote speaker</em></strong> at a conference, while all the other sections are the supporting acts. You wouldn't want the keynote to be lost in the crowd, would you? Of course not! So, let's give <code class="element">&lt;<span class="html">main</span>&gt;</code> the respect it deserves. <small class="nbsp">Your <strong>future self</strong> (and your users) will thank you.</small></p>
+				
+				<h4>Related Content</h4>
+				<p>Something else here too! 
+					Connect with me on <span class="icon linkedin"></span> <span class="icon youtube"></span> <span class="icon facebook"></span> <span class="icon bsky"></span> <span class="icon github"></span> <span class="icon whatsapp"></span> <span class="icon discord"></span>
+				</p>
+
+			</div>
+		</article>
+	</main>
+
+	<footer role="contentinfo" aria-label="Main Footer">
+		<div>
+			<nav class="flexible links">
+				<div>
+					<ul>
+						<li><a href=""><strong>Head Link 1</strong></a>:</li>
+						<li><a href="">Link 2</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><a href=""><strong>Head Link 2</strong></a>:</li>
+						<li><a href="">Link 2</a></li>
+					</ul>
+				</div>
+				<!-- Add more flexible links containers if You Need -->
+			</nav>
+			<p class="disclaimer">Add disclaimers here!</p>
+			<p class="copyright">Add copyrights here!</p>
+			<p class="social">Add socials and links here:
+				<a class="icon linkedin" href="" target="_blank" rel="me noopener">LinkedIn</a>
+				<a class="icon youtube" href="" target="_blank" rel="me noopener">YouTube</a>
+				<a class="icon facebook" href="" target="_blank" rel="me noopener">Facebook</a>
+				<a class="icon instagram" href="" target="_blank" rel="me noopener">Instagram</a>
+				<a class="icon whatsapp" href="" target="_blank" rel="me noopener">WhatsApp</a>
+				<a class="icon bsky" href="" target="_blank" rel="me noopener">Bluesky</a>
+				<a class="icon github" href="" target="_blank" rel="me noopener">Github</a>
+				<a class="icon discord" href="" target="_blank" rel="me noopener">Discord</a>
+			</p>
+			<div class="accessibility">
+				<button id="consent-manage" role="switch" aria-label="Consent Preferences"></button>
+				<button id="color-scheme" role="switch" aria-label="Dark Mode"></button>
+				<button id="reader-scheme" role="switch" aria-label="Reader Mode"></button>
+				<button id="nocode-mode" role="switch" aria-label="NoCode Mode"></button>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Main.HTML Navigation -->
+	<nav role="navigation" aria-label="Main Navigation">
+		<button role="button" aria-label="Menu Button" id="menu"></button>
+		<img loading="lazy" class="logo" />
+		<div class="links" role="complementary" aria-label="Menu Links"></div>
+		<div id="search" role="search" aria-label="Search"></div>
+		<div id="account"></div>
+		<ol id="breadcrumbs"></ol>
+	</nav>
+
+	<!-- Main.HTML Dialog Menus -->
+	<dialog role="menu" aria-label="Main Menu" class="menu" open></dialog>
+	<dialog role="searchbox" aria-label="Search Results" class="searchbox" open></dialog>
+	<dialog role="application" aria-label="Account App" class="application" open></dialog>
+	<dialog role="region" aria-label="Gallery" class="region" open></dialog>
+
+</body>
+</html>
