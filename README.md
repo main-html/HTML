@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://www.mainhtml.dev/project/">
-        <img src="https://www.mainhtml.dev/image/mainhtml.svg" alt="Main HTML Logo" width="1075" height="300" style="filter:invert(1);">
+        <img src="https://www.mainhtml.dev/image/mainhtml-logo.png" alt="Main HTML Logo" width="1075" height="300">
     </a>
 </p>
 
@@ -20,13 +20,20 @@ This functionality is platform agnostic, accessibility aware and has no need for
 ## Getting started
 Several quick start options are available:
 
-- [Download the latest release] or Download the repo ZIP from a branch you choose.
+- [Download the latest release](https://github.com/AndyFutcher/main.html/releases) or Download the repo ZIP from a branch you choose.
 - Clone the repo: `git clone https://github.com/AndyFutcher/main.html`
 
 
 ## Change log
-Version 0.6-beta - Initial Release 
- - Still missing some major branches of on the roadmap and a few HTML markups too.
+Version 0.6-beta - Consent Release 
+ - Consent and trust management system
+
+
+## Development roadmap
+ - Version 1.0 - **Full Release**
+ - Version 0.9 - Analytics & A/B Testing Update 
+ - Version 0.8 - Personalisation Update 
+ - Version 0.7 - Headless Update 
 
 
 ### About the developer

@@ -30,8 +30,8 @@
 		# Main JS is a modern, lightweight and portable website JavaScript framework, Copyright (C) 2025 Andy Futcher. See <https://mainjs.org/> for more
 		# This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 		# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
-		# Main.JS not modified from original. Date: 2025-07-18 ### */
-		var main={version:{main:0,minor:6,patch:5,branch:'main',htmlless:false},meta:{},js:{proto:{fs:'/',fs2:'//',https:'https:',http:'http:',file:'file:'},create:{base:document.createElement('base'),theme:document.createElement('link'),script:document.createElement('script'),style:document.createElement("style")},css:{loaded:false},regex:{base:/.*(\:\/\/|public\B|-html\b|-js\b|-dev\b|-rc\b|-main\b|-com\b|-com-[a-z]|-co-[a-z])[a-zA-Z0-9\-\_\.]*/i}}}; // Declare Main Object
+		# Main.JS not modified from original. Date: 2025-08-01 ### */
+		var main={version:{sem:{main:0,minor:6,patch:24},branch:'dev',htmlless:false},meta:{},js:{proto:{fs:'/',fs2:'//',https:'https:',http:'http:',file:'file:'},create:{base:document.createElement('base'),theme:document.createElement('link'),script:document.createElement('script'),style:document.createElement("style")},css:{loaded:false},regex:{base:/.*(\:\/\/|public\B|-html\b|-js\b|-dev\b|-rc\b|-main\b|-com\b|-com-[a-z]|-co-[a-z])[a-zA-Z0-9\-\_\.]*/i}}}; // Declare Main Object
 		main.meta.theme=main.meta.theme||document.querySelector('meta[name="theme"]')||document.querySelector('meta[property$=".theme"]')||'default.css';if(main.meta.theme.content){main.meta.theme=main.meta.theme.content;}; // Webpages Canonical URL
 		main.meta.canonical=main.meta.canonical||document.querySelector('link[rel="canonical"]')||window.location.pathname.match(main.js.regex.base)[0];if(main.meta.canonical.href){main.meta.canonical=main.meta.canonical.href;}; // Webpages Canonical URL
 		switch(window.location.protocol){case main.js.proto.https:main.js.create.base.href=(window.location.origin+window.location.pathname).match(main.js.regex.base)[0]+main.js.proto.fs; // Origin Execution
@@ -39,9 +39,9 @@
 		break;case main.js.proto.http:window.location.href=main.js.proto.https+window.location.host+window.location.pathname; // Redirect to HTTPS Version
 		break;default:window.location.href=main.meta.canonical; // Unknown Protocol, Redirect to Canonical
 		};main.base=main.js.create.base.href;document.head.appendChild(main.js.create.base); // Inject Base Tag
-		Object.assign(main.js.create.theme,main.version.htmlless||{id:"main-theme",rel:"preload",as:"style",href:"main/theme/"+main.meta.theme+"?version="+Object.values(main.version).join('')});document.head.appendChild(main.js.create.theme).setAttribute('onload',"this.onload=null;this.rel='stylesheet'"); // Inject Lazy Loaded CSS
+		Object.assign(main.js.create.theme,main.version.htmlless||{id:"main-theme",rel:"preload",as:"style",href:"main/theme/"+main.meta.theme+"?version="+Object.values(main.version.sem).join('.')});document.head.appendChild(main.js.create.theme).setAttribute('onload',"this.onload=null;this.rel='stylesheet'"); // Inject Lazy Loaded CSS
 		Object.assign(main.js.create.style,{id:"main-css"});document.head.appendChild(main.js.create.style);main.js.css=Object.assign(main.js.css,{sheet:main.js.create.style.sheet.insertRule('main, footer { visibility: hidden; }',0),index:{loading:0}}); // Inject Main CSS Head
-		Object.assign(main.js.create.script,{id:"main-js",src:"main/main.js?version="+Object.values(main.version).join(''),defer:'true'});document.head.appendChild(main.js.create.script); // Inject Deferred JS Script
+		Object.assign(main.js.create.script,{id:"main-js",src:"main/main.js?version="+Object.values(main.version.sem).join('.'),defer:'true'});document.head.appendChild(main.js.create.script); // Inject Deferred JS Script
 	</script><noscript><link rel="stylesheet" href="main/theme/default.css"></noscript>
 	<!-- Main.JS v0.6 Snippet: END -->
 	<!-- ### Main.JS insert add-on Main.JS scripts after this line. ### -->

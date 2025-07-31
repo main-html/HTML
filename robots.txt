@@ -1,6 +1,9 @@
-## Robots Directives
+# Robots Directives
 
-# Indexability
+## Indexability
 User-agent: *
 Allow: /
 
+## Robots Honour
+User-agent: *
+Disallow: /humans.txt

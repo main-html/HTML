@@ -1,4 +1,5 @@
 Simply extract the theme to this folder, once extracted you can use either the Main HTML meta property or theme metatag;
 
 1. <meta name="theme" content="theme_name_here.css">
+    -- OR --
 2. <meta property="main.css.theme" content="theme-folder_name_here/default.css" />
