@@ -5,7 +5,7 @@
 ## Main.HTML modified for light mode only with Lotti Beans. Date: 2025-08-01  ### --> */
 /* Wireframe */
 *,*::before,*::after {box-sizing:border-box;margin:0;padding:0;
-} :root {--ver-major:0;--ver-minor:6;--ver-patch:50;--ver-branch:'rc'; /* Versions */
+} :root {--ver-major:0;--ver-minor:6;--ver-patch:50;--ver-branch:'main'; /* Versions */
 --font-fallback:-apple-system,BlinkMacSystemFont,"Apple Color Emoji"; /* Font Fallback */
 color-scheme:light dark; /* Dark Mode Supported */
 /* AUTO FONTS */		/*--font-body:"";--font-headings:"";--font-monospace:"";--font-title:"";--font-brand:"";--font-footer:"";--font-reader-mode:"";*/
