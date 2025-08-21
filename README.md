@@ -20,8 +20,8 @@ This functionality is platform agnostic, accessibility aware and has no need for
 ## Getting started
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/AndyFutcher/main.html/releases) or Download the repo ZIP from a branch you choose.
-- Clone the repo: `git clone https://github.com/AndyFutcher/main.html`
+- [Download the latest release](https://github.com/andyfutcher/main.html/releases) or Download the repo ZIP from a branch you choose.
+- Clone the repo: `git clone https://github.com/andyfutcher/main.html`
 
 
 ## Change log

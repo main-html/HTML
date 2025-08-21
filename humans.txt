@@ -4,3 +4,6 @@
 author: Your Name
 website: Your Website
 
+## Main.JS Directive
+### Include optional Main.JS property controls here:
+main.js.network.capable: true
