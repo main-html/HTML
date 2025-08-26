@@ -51,8 +51,8 @@
 		# Main JS is a modern, lightweight and portable website JavaScript framework, Copyright (C) 2025 Andy Futcher. See <https://mainjs.org/> for more
 		# This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 		# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
-		# Main.JS not modified from original. Date: 2025-08-01 ### */
-		var main={version:{sem:{main:0,minor:6,patch:50},branch:'main',htmlless:false},meta:{},js:{proto:{fs:'/',fs2:'//',https:'https:',http:'http:',file:'file:'},create:{base:document.createElement('base'),theme:document.createElement('link'),script:document.createElement('script'),style:document.createElement("style")},css:{loaded:false},regex:{base:/.*(\:\/\/|public\B|-html\b|-js\b|-dev\b|-rc\b|-main\b|-com\b|-com-[a-z]|-co-[a-z])[a-zA-Z0-9\-\_\.]*/i}}}; // Declare Main Object
+		# Main.JS not modified from original. Date: 2025-08-26 ### */
+		var main={version:{sem:{main:0,minor:7,patch:0},branch:'main',htmlless:false},meta:{},js:{proto:{fs:'/',fs2:'//',https:'https:',http:'http:',file:'file:'},create:{base:document.createElement('base'),theme:document.createElement('link'),script:document.createElement('script'),style:document.createElement("style")},css:{loaded:false},regex:{base:/.*(\:\/\/|public\B|-html\b|-js\b|-dev\b|-rc\b|-main\b|-com\b|-com-[a-z]|-co-[a-z])[a-zA-Z0-9\-\_\.]*/i}}}; // Declare Main Object
 		main.meta.canonical=document.querySelector('link[rel="canonical"]')||{href:null};main.meta.canonical.href=main.meta.canonical.href||main.meta.canonical.content||window.location.pathname.match(main.js.regex.base)[0]; // Webpages Canonical URL
 		main.meta.theme=document.querySelector('meta[name="theme"]')||document.querySelector('meta[property$=".theme"]')||{content:null};main.meta.theme.content=main.meta.theme.content||main.meta.theme.href||'default.css'; // Webpages Canonical URL
 		switch(window.location.protocol){case main.js.proto.https:main.js.create.base.href=(window.location.origin+window.location.pathname).match(main.js.regex.base)[0]+main.js.proto.fs; // Origin Execution
@@ -78,10 +78,10 @@
 		# Main HTML is an accessibility aware template putting users and web developers first, Copyright (C) 2025 Andy Futcher. See <https://www.mainhtml.dev/> for more
 		# This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 		# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
-		## Main.HTML modified for light mode only with Lotti Beans. Date: 2025-08-01  ### --> */
+		## Main.HTML modified for light mode only with Lotti Beans. Date: 2025-08-26 ### --> */
 		/* Wireframe */
 		*,*::before,*::after {box-sizing:border-box;margin:0;padding:0;
-		} :root {--ver-major:0;--ver-minor:6;--ver-patch:50;--ver-branch:'main'; /* Versions */
+		} :root {--ver-major:0;--ver-minor:7;--ver-patch:0;--ver-branch:'main'; /* Versions */
 		--font-fallback:-apple-system,BlinkMacSystemFont,"Apple Color Emoji"; /* Font Fallback */
 		color-scheme:light dark; /* Dark Mode Supported */
 		/* AUTO FONTS */		/*--font-body:"";--font-headings:"";--font-monospace:"";--font-title:"";--font-brand:"";--font-footer:"";--font-reader-mode:"";*/
@@ -100,7 +100,7 @@
 		/* Highlight Color */	/*--highlight:#664d03;--highlight-text:#fff3cd;*/
 		/* Scrollbar Color */	/*--scrollbar:#495057;--scrollbar-track:#2c2c2c;*/
 		/* Quote Color */		/*--blockquote-border:var(--primary,#007bff);*/
-		/* Logos & Icons */		/*--logo-invert:1;*/
+		/* Logos & Icons */		/*--logo-invert:1;--menu-visible:hidden;*/
 		} body[class*="light"] {color-scheme:light; /* Light Mode - Use Root Color Variables In Your Theme  */
 		} body[class*="reader"] {--font-reader-mode:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Open Sans",Roboto,Oxygen,Ubuntu,Arial;--text-shadow:transparent; /* Reader Mode Overrides */
 		} /* Elements */
@@ -114,7 +114,7 @@
 		} main>:first-child,header>:first-child,nav>:first-child,div>:first-child,footer>:first-child,section>:first-child,.surface>:first-child,surface>:first-child,[role="region"]>:first-child {margin-top:0;
 		} main header>div,main [role="banner"]>div,[role="main"] header>div,[role="main"] [role="banner"]>div {margin-top:0;
 		} main:last-child,header>:last-child,nav>:last-child:last-child,footer>:last-child,div div>:not(button,.button,input,label,.input,textarea,select) {margin-bottom:0;width:100%;
-		} main>div:not(.header),[role="main"]>div:not(.header),footer>div,[role="contentinfo"]>div,aside>div,main>article,main header>div,main [role="banner"]>div,main .header>div,dialog:not(dialog.alertdialog,dialog[role="alertdialog"],dialog.notification,dialog.noscript)>div,dialog.notification>div>*,dialog.noscript>div>*,dialog>form {margin:0 auto 0 var(--page-margin,auto);width:calc(90% - var(--page-left,0vw));max-width:var(--page-width,1040px);
+		} main>div:not(.header),[role="main"]>div:not(.header),footer>div,[role="contentinfo"]>div,aside>div,main>article,main header>div,main [role="banner"]>div,[role="main"] [role="banner"]>div,main .header>div,dialog:not(dialog.alertdialog,dialog[role="alertdialog"],dialog.notification,dialog.noscript)>div,dialog.notification>div>*,dialog.noscript>div>*,dialog>form {margin:0 auto 0 var(--page-margin,auto);width:calc(90% - var(--page-left,0vw));max-width:var(--page-width,1040px);
 		} main>header>div p,[role="main"]>header>div p,main>[role="banner"]>div p,[role="main"]>[role="banner"]>div p {margin-top:var(--spacing,1rem);font-size:1.2rem;} main>hr,[role="main"]>hr,main>picture,[role="main"]>picture {margin:calc(var(--spacing,1rem) * 2) 0 0;
 		} h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,.title,title {margin-top:calc(var(--spacing,1rem) * 2);color:var(--text,#343a40);font-family:var(--font-reader-mode,var(--font-headings,var(--font-fallback)));font-weight:bold;line-height:1.2;cursor:default;text-shadow:1px 1px 2px var(--text-shadow,#fff);
 		} title,.title {font-family:var(--font-title,var(--font-headings,var(--font-fallback)));} brand,.brand {font-family:var(--font-brand,var(--font-headings,var(--font-fallback)));
@@ -146,11 +146,11 @@
 		} /* Navigation */
 		body>nav,body>[role="navigation"] {position:absolute;top:calc(0% + var(--page-top,0px));max-height:calc(var(--nav-height,0px) + var(--border-width,1px));width:calc(100% - var(--scrollbar-width,15px));border-bottom:var(--border-width,1px) solid var(--border,#d1cfc7);backdrop-filter:blur(10px) brightness(0.75);z-index:var(--z-limit,10);white-space:nowrap;overflow:hidden;visibility:hidden;
 		} body>nav>*:empty,body>[role="navigation"]>* {margin:0;max-height:var(--nav-height,0px);float:inline-start;
-		} body>nav>#menu,body>[role="navigation"]>#menu {display:none;
-		} body>nav>#search,body>[role="navigation"]>#search {display:none;
-		} body>nav>#account,body>[role="navigation"]>#account {display:none;
+		} body>nav>#menu,body>[role="navigation"]>#menu {min-width:40px;width:60px;max-width:15vw;visibility:var(--menu-visible,hidden);
+		} body>nav>#search,body>[role="navigation"]>#search {visibility:hidden;
+		} body>nav>#account,body>[role="navigation"]>#account {visibility:hidden;
 		} body>nav>.links,body>[role="navigation"]>.links {float:inline-end;
-		} body>nav>#breadcrumbs,body>[role="navigation"]>#breadcrumbs {position:absolute;right:0;top:calc(var(--nav-height,0px) + var(--border-width,1px));opacity:0;
+		} body>nav>#breadcrumbs,body>[role="navigation"]>#breadcrumbs {position:absolute;right:0;visibility:hidden;
 		} body.loaded>nav,body.loaded>[role="navigation"] {visibility:visible !important;
 		} body[class*="light"]>nav>img.logo,body[class*="light"]>[role="navigation"]>.logo {filter:none;
 		} /* Media */
@@ -193,15 +193,11 @@
 		} pre code {display:block;padding:0em 0.5em;font-family:var(--font-monospace,Consolas),monospace;font-size:0.9em;border-radius:0;
 		} pre code::before {position:absolute;width:2rem;left:0;padding-right:0.25em;color:var(--primary,#007bff);text-align:end;background-color:var(--disabled,#d0cec6);counter-increment:line;content:counter(line);user-select:none;cursor:default;
 		} /* Accordion */
-		details {margin:var(--spacing,1rem) 0;background:var(--flex,#fff);border:var(--border-width,1px) solid var(--border,#d1cfc7);border-radius:var(--radiuses,.25rem);
-		} details summary {position:relative;padding:var(--spacing,1rem);padding-left:0;margin-left:var(--spacing,1rem);font-weight:bold;cursor:pointer;list-style:none;
-		} details summary::-webkit-details-marker {display:none;
-		} details summary::before {content:'▶';position:absolute;right:calc(var(--spacing,1rem) * 1.5);font-size:1em;transform:rotate(0deg);transition:transform 0.2s ease-in-out;
-		} details[open] summary::before {transform:rotate(90deg);
-		} details>div {padding:var(--spacing,1rem) var(--spacing,1rem) 0 var(--spacing,1rem);margin-bottom:1em;border-top:var(--border-width,1px) solid var(--border,#d1cfc7);user-select:none;
-		} details>div *:first-child {margin-top:var(--spacing,1rem);
-		} details>div *:last-child {margin-bottom:var(--spacing,1rem);
-		} details>div p,details>div ul,details>div ol {user-select:none;
+		details {background:var(--flex,#fff);border:var(--border-width,1px) solid var(--border,#d1cfc7);border-radius:var(--radiuses,.25rem);
+        } details>summary,details .summary {display:list-item;position:relative;padding:var(--spacing,1rem);padding-left:0;margin-left:var(--spacing,1rem);font-weight:bold;cursor:pointer;list-style:none;
+        } details>summary::before {content:'\1fb6c\fe0e';position:absolute;right:calc(var(--spacing,1rem) * 1.5);font-size:1em;transform:rotate(0deg);transition:transform 0.2s ease-in-out;
+		} details>div {border-top:var(--border-width,1px) solid var(--border,#d1cfc7);
+		} details[open]>summary::before {transform:rotate(90deg);} details>summary::-webkit-details-marker {display:none;
 		} /* Tables */
 		table {margin-top:var(--spacing,1rem);width:100%;border-spacing:0;border-collapse:collapse;background:var(--surface,#f0eee8);caption-side:bottom;
 		} thead th {color:var(--header-text,#23272b);background:var(--table-header,#c2b9af);vertical-align:bottom;
@@ -224,14 +220,14 @@
 		} dialog.notification>div,dialog[role="status"]>div,dialog.noscript>div {position:static;border-width:0;
 		} /* Padding */
 		pad:not(.above,.sides,.below),.pad:not(.above,.sides,.below) {padding:var(--spacing,1rem);} padded:not(.above,.sides,.below),.padded:not(.above,.sides,.below) {padding:calc(var(--spacing,1rem) * 2);
-		} pad.above,.pad.above {padding-top:var(--spacing,1rem);} padded.above,.padded.above {padding-top:calc(var(--spacing,1rem) * 2);
-		} pad.sides,.pad.sides {padding-left:var(--spacing,1rem);padding-right:var(--spacing,1rem);} padded.sides,.padded.sides {padding-left:calc(var(--spacing,1rem) * 2);padding-right:calc(var(--spacing,1rem) * 2);
-		} pad.below,.pad.below {padding-bottom:var(--spacing,1rem);} padded.below,.padded.below {padding-bottom:calc(var(--spacing,1rem) * 2);
+		} pad.above,.pad.above {padding-top:var(--spacing,1rem);} padded.above,.padded.above {padding-top:calc(var(--spacing,1rem) * 2);} spacing.above,.spacing.above {margin-top:var(--spacing,1rem);
+		} pad.sides,.pad.sides {padding-left:var(--spacing,1rem);padding-right:var(--spacing,1rem);} padded.sides,.padded.sides {padding-left:calc(var(--spacing,1rem) * 2);padding-right:calc(var(--spacing,1rem) * 2);} spacing.sides,.spacing.sides {margin-left:var(--spacing,1rem);margin-right:var(--spacing,1rem);
+		} pad.below,.pad.below {padding-bottom:var(--spacing,1rem);} padded.below,.padded.below {padding-bottom:calc(var(--spacing,1rem) * 2);} spacing.below,.spacing.below {margin-bottom:var(--spacing,1rem);
 		} /* Containers */
 		tooltip,.tooltip,[role="tooltip"] {position:absolute;opacity:0;z-index:calc(var(--z-limit,10) - 0);
 		} container,.container {position:relative;padding-top:50vh;width:100%;overflow:hidden;border-radius:calc(var(--radiuses,.25rem) * 2);
 		} container.tiny,.container.tiny {padding-top:16vh;} container.small,.container.small {padding-top:33vh;} container.medium,.container.medium {padding-top:50vh;} container.large,.container.large {padding-top:66vh;} container.full,.container.full {padding-top:100vh;
-		} container.square,.container.square {padding-top:50%;} container.mobile,.container.mobile {padding-top:80%;} container.wide,.container.wide {padding-top:20%;} container.portrait,.container.portrait {padding-top:56.25%;} container.landscape,.container.landscape {padding-top:43.75%;
+		} container.square,.container.square {padding-top:90%;} container.portrait,.container.portrait {padding-top:120%;} container.landscape,.container.landscape {padding-top:60%;} container.stories,container.reels,.container.stories,.container.reels {padding-top:170%;
 		} container>*:not(figcaption),.container>*:not(figcaption) {position:absolute;padding:0;margin:0;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radiuses,.25rem) * 2);} container>figcaption,.container>figcaption {position:relative;color:var(--text,#343a40);z-index:calc(var(--z-limit,10) - 4);
 		} container.pad.above,.container.pad.above {margin-top:var(--spacing,1rem);} container.padded.above,.container.padded.above {margin-top:calc(var(--spacing,1rem) * 2);
 		} /* Flexible */
