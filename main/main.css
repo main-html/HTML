@@ -5,7 +5,7 @@
 ## Main.HTML modified for light mode only with Lotti Beans. Date: 2025-08-26 ### --> */
 /* Wireframe */
 *,*::before,*::after {box-sizing:border-box;margin:0;padding:0;
-} :root {--ver-major:0;--ver-minor:7;--ver-patch:0;--ver-branch:'rc'; /* Versions */
+} :root {--ver-major:0;--ver-minor:7;--ver-patch:2;--ver-branch:'rc'; /* Versions */
 --font-fallback:-apple-system,BlinkMacSystemFont,"Apple Color Emoji"; /* Font Fallback */
 color-scheme:light dark; /* Dark Mode Supported */
 /* AUTO FONTS */		/*--font-body:"";--font-headings:"";--font-monospace:"";--font-title:"";--font-brand:"";--font-footer:"";--font-reader-mode:"";*/
@@ -76,7 +76,6 @@ body>nav,body>[role="navigation"] {position:absolute;top:calc(0% + var(--page-to
 } body>nav>.links,body>[role="navigation"]>.links {float:inline-end;
 } body>nav>#breadcrumbs,body>[role="navigation"]>#breadcrumbs {position:absolute;right:0;visibility:hidden;
 } body.loaded>nav,body.loaded>[role="navigation"] {visibility:visible !important;
-} body[class*="light"]>nav>img.logo,body[class*="light"]>[role="navigation"]>.logo {filter:none;
 } /* Media */
 img,svg,video,canvas,audio,iframe,embed,object {display:block;max-width:100%;background-size:cover;
 } span>img,span>picture {display:inline-block !important;margin-bottom:0 !important;max-height:1em;width:auto;vertical-align:text-bottom;background-color:transparent !important;
