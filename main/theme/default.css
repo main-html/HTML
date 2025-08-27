@@ -69,6 +69,7 @@ tooltip,.tooltip,[role="tooltip"] {position:absolute;inline-size:max-content;max
 body>nav,body>[role="navigation"] {display:block;
 } body>nav>img.logo,body>[role="navigation"]>.logo {min-width:60px;max-width:40%;vertical-align:middle;filter:invert(var(--logo-invert,1));
 } body>nav>#menu,body>[role="navigation"]>#menu {height:calc(var(--nav-height,0px) + var(--border-width,1px));background-size:80%;background-repeat:no-repeat;background-position:center;background-color:transparent;border:0;box-shadow:none;outline:0;filter:invert(var(--logo-invert,1));transform:rotate(270deg);transition:transform 300ms;
+} body[class*="light"]>nav>img.logo,body[class*="light"]>[role="navigation"]>.logo,body[class*="light"]>nav>#menu,body[class*="light"]>[role="navigation"]>#menu {filter:none;
 } body.menu>nav>#menu,body.menu>[role="navigation"]>#menu {transform:rotate(360deg);
 } /* Main HTML Navigation Footer */
 footer>div .links,[role="contentinfo"]>.links {width:100%;align-items:stretch;gap:0;
@@ -96,9 +97,9 @@ dialog.notification .warning,dialog[role="status"] .warning,dialog.noscript>div 
 } dialog.notification div>p>button:empty,dialog[role="status"] div>p>button:empty {display:block;position:relative;margin:0.3em 1em;float:right;font-family:sans-serif;color:inherit;transform:scale(2);background:transparent;border:none;outline:none;box-shadow:none !important;cursor:pointer;
 } dialog.notification #notification-dismiss:empty::before,dialog[role="status"] #notification-dismiss:empty::before {content:'\00d7\fe0e';
 } /* Main HTML Dialog: Menu */
-dialog.menu,dialog[role="menu"] {position:fixed;padding-top:calc(var(--nav-height, 0px) + var(--border-width, 1px));display:block;top:0;left:-100%;width:400px;max-width:85vw;height:100vh;border-left-width:0;background-color:transparent;backdrop-filter:blur(10px) brightness(0.5);z-index:calc(var(--z-limit,10) - 1);overflow-y:auto;visibility:hidden;
+dialog.menu,dialog[role="menu"] {position:fixed;padding-top:calc(var(--nav-height, 0px) + var(--border-width, 1px));display:block;top:0;left:-100%;width:400px;max-width:85vw;height:100vh;border-width:0 var(--border-width,1px) 0 0;background:color-mix(in srgb,var(--surface,#f0eee8) 50%, transparent);backdrop-filter:blur(10px) brightness(0.5);border-radius:0 calc(var(--radiuses, .25rem) * 2) calc(var(--radiuses, .25rem) * 2) 0;z-index:calc(var(--z-limit,10) - 1);overflow-y:auto;visibility:hidden;
 } body.loaded dialog.menu,body.loaded dialog[role="menu"] {transition:left 300ms ease-out;
-} body.menu dialog.menu,body.menu dialog[role="menu"],dialog.menu:focus-within,dialog[role="menu"]:focus-within,dialog.menu:hover,dialog[role="menu"]:hover {left:0%;visibility:visible;
+} body.menu dialog.menu,body.menu dialog[role="menu"] {left:0%;visibility:visible;
 }
 
 /* Main HTML Icons */
