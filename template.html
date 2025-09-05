@@ -17,8 +17,9 @@
 	<noscript><base href="https://www.mainhtml.dev/"></noscript>
 	
 	<!-- Custom Main.HTML & Main.JS -->
+	<meta property="main.menu.enabled" content="true" />
+	<meta property="main.application.contact.enabled" content="true" />
 	<meta property="main.consent.posture" content="consent" />
-	<meta property="main.track.domains" content="mainhtml.dev,mainhtml.com" />
 	<meta property="main.font.provider" content="Google" />
 	<meta property="main.font.family.headings" content="Gugi" />
 	<meta property="main.font.family.body" content="Roboto:ital,wght@0,100..900;1,100..900" />
@@ -28,8 +29,8 @@
 	
 	<!-- Page Open Graph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.mainhtml.dev/" />
-	<meta property="og:title" content="Your Website" />
+	<meta property="og:url" content="https://www.mainhtml.dev/template.html" />
+	<meta property="og:title" content="Your Website Template" />
 	<meta property="og:description" content="Your Page Description" />
 	<meta property="og:image" content="https://www.mainhtml.dev/image/mainhtml.svg" />
 	
@@ -46,13 +47,13 @@
 	}]</script>
 	<!-- Main.HTML Page Customisation: END -->
 
-	<!-- Main.JS v0.6 Snippet: START -->
+	<!-- Main.JS Snippet: START -->
 	<script> /* GNU General Public License v3.0
 		# Main JS is a modern, lightweight and portable website JavaScript framework, Copyright (C) 2025 Andy Futcher. See <https://mainjs.org/> for more
 		# This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 		# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
-		# Main.JS not modified from original. Date: 2025-08-26 ### */
-		var main={version:{sem:{main:0,minor:7,patch:2},branch:'main',htmlless:false},meta:{},js:{proto:{fs:'/',fs2:'//',https:'https:',http:'http:',file:'file:'},create:{base:document.createElement('base'),theme:document.createElement('link'),script:document.createElement('script'),style:document.createElement("style")},css:{loaded:false},regex:{base:/.*(\:\/\/|public\B|-html\b|-js\b|-dev\b|-rc\b|-main\b|-com\b|-com-[a-z]|-co-[a-z])[a-zA-Z0-9\-\_\.]*/i}}}; // Declare Main Object
+		# Main.JS not modified from original. Date: 2025-09-05 ### */
+		var main={version:{sem:{main:0,minor:7,patch:12},branch:'main',htmlless:false},meta:{},js:{proto:{fs:'/',fs2:'//',https:'https:',http:'http:',file:'file:'},create:{base:document.createElement('base'),theme:document.createElement('link'),script:document.createElement('script'),style:document.createElement("style")},css:{loaded:false},regex:{base:/.*(\:\/\/|public\B|-html\b|-js\b|-dev\b|-rc\b|-main\b|-com\b|-com-[a-z]|-co-[a-z])[a-zA-Z0-9\-\_\.]*/i}}}; // Declare Main Object
 		main.meta.canonical=document.querySelector('link[rel="canonical"]')||{href:null};main.meta.canonical.href=main.meta.canonical.href||main.meta.canonical.content||window.location.pathname.match(main.js.regex.base)[0]; // Webpages Canonical URL
 		main.meta.theme=document.querySelector('meta[name="theme"]')||document.querySelector('meta[property$=".theme"]')||{content:null};main.meta.theme.content=main.meta.theme.content||main.meta.theme.href||'default.css'; // Webpages Canonical URL
 		switch(window.location.protocol){case main.js.proto.https:main.js.create.base.href=(window.location.origin+window.location.pathname).match(main.js.regex.base)[0]+main.js.proto.fs; // Origin Execution
@@ -64,12 +65,12 @@
 		Object.assign(main.js.create.style,{id:"main-css"});document.head.appendChild(main.js.create.style);main.js.css=Object.assign(main.js.css,{sheet:main.js.create.style.sheet.insertRule('main, footer { visibility: hidden; }',0),index:{loading:0}}); // Inject Main CSS Head
 		Object.assign(main.js.create.script,{id:"main-js",src:"main/main.js?version="+Object.values(main.version.sem).join('.'),defer:'true'});document.head.appendChild(main.js.create.script); // Inject Deferred JS Script
 	</script><noscript><link rel="stylesheet" href="main/theme/default.css"></noscript>
-	<!-- Main.JS v0.6 Snippet: END -->
+	<!-- Main.JS Snippet: END -->
 	<!-- ### Main.JS insert add-on Main.JS scripts after this line. ### -->
 
 	<!-- Main.HTML Viewport -->
 	<meta name="generator" content="Main HTML">
-	<meta name="viewport" content="width=device-width,initial-scale=1" /><meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="handheldfriendly" content="true" /><meta name="mobile-web-app-capable" content="yes" />
 	<link rel="icon" href="favicon.svg" /><link rel="apple-touch-icon" href="favicon.svg">
 	
@@ -78,10 +79,10 @@
 		# Main HTML is an accessibility aware template putting users and web developers first, Copyright (C) 2025 Andy Futcher. See <https://www.mainhtml.dev/> for more
 		# This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 		# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
-		## Main.HTML modified for light mode only with Lotti Beans. Date: 2025-08-26 ### --> */
+		## Main.HTML not modified from original. Date: 2025-09-05 ### */
 		/* Wireframe */
 		*,*::before,*::after {box-sizing:border-box;margin:0;padding:0;
-		} :root {--ver-major:0;--ver-minor:7;--ver-patch:2;--ver-branch:'main'; /* Versions */
+		} :root {--ver-major:0;--ver-minor:7;--ver-patch:12;--ver-branch:'main'; /* Versions */
 		--font-fallback:-apple-system,BlinkMacSystemFont,"Apple Color Emoji"; /* Font Fallback */
 		color-scheme:light dark; /* Dark Mode Supported */
 		/* AUTO FONTS */		/*--font-body:"";--font-headings:"";--font-monospace:"";--font-title:"";--font-brand:"";--font-footer:"";--font-reader-mode:"";*/
@@ -114,12 +115,12 @@
 		} main>:first-child,header>:first-child,nav>:first-child,div>:first-child,footer>:first-child,section>:first-child,.surface>:first-child,surface>:first-child,[role="region"]>:first-child {margin-top:0;
 		} main header>div,main [role="banner"]>div,[role="main"] header>div,[role="main"] [role="banner"]>div {margin-top:0;
 		} main:last-child,header>:last-child,nav>:last-child:last-child,footer>:last-child,div div>:not(button,.button,input,label,.input,textarea,select) {margin-bottom:0;width:100%;
-		} main>div:not(.header),[role="main"]>div:not(.header),footer>div,[role="contentinfo"]>div,aside>div,main>article,main header>div,main [role="banner"]>div,[role="main"] [role="banner"]>div,main .header>div,dialog:not(dialog.alertdialog,dialog[role="alertdialog"],dialog.notification,dialog.noscript)>div,dialog.notification>div>*,dialog.noscript>div>*,dialog>form {margin:0 auto 0 var(--page-margin,auto);width:calc(90% - var(--page-left,0vw));max-width:var(--page-width,1040px);
+		} main>div:not(.header),[role="main"]>div:not(.header),footer>div,[role="contentinfo"]>div,aside>div,main>article,main header>div,main [role="banner"]>div,[role="main"] [role="banner"]>div,main .header>div,dialog:not(dialog.alertdialog,dialog[role="alertdialog"],dialog.notification,dialog.noscript)>div,dialog.notification>div>*,dialog.noscript>div>* {margin:0 auto 0 var(--page-margin,auto);width:calc(90% - var(--page-left,0vw));max-width:var(--page-width,1040px);
 		} main>header>div p,[role="main"]>header>div p,main>[role="banner"]>div p,[role="main"]>[role="banner"]>div p {margin-top:var(--spacing,1rem);font-size:1.2rem;} main>hr,[role="main"]>hr,main>picture,[role="main"]>picture {margin:calc(var(--spacing,1rem) * 2) 0 0;
 		} h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,.title,title {margin-top:calc(var(--spacing,1rem) * 2);color:var(--text,#343a40);font-family:var(--font-reader-mode,var(--font-headings,var(--font-fallback)));font-weight:bold;line-height:1.2;cursor:default;text-shadow:1px 1px 2px var(--text-shadow,#fff);
 		} title,.title {font-family:var(--font-title,var(--font-headings,var(--font-fallback)));} brand,.brand {font-family:var(--font-brand,var(--font-headings,var(--font-fallback)));
 		} title,.title,.biggest,biggest {font-size:3.5em;} h1,.h1,.bigger,bigger {font-size:2em;} h2,.h2,.big,big {font-size:1.5em;} h3,.h3,.large,large {font-size:1.17em;} h4,.h4 {font-size:1em;} h5,.h5 {font-size:0.83em;} h6,.h6 {font-size:0.67em;
-		} p,address {margin-top:var(--spacing,1rem);cursor:default;} .br {margin-top:0;} .nbsp,p>code {white-space:nowrap;
+		} p,address {margin-top:var(--spacing,1rem);width:100%;cursor:default;} .br {margin-top:0;} .nbsp,p>code {white-space:nowrap;
 		} a,[onclick],[href] {color:var(--link);text-decoration:none;cursor:pointer;} a[href^="tel:"],a[href^="mailto:"] {font-family:var(--font-monospace,Consolas),monospace;
 		} a:not(.button):hover,a:not(.button):focus {color:var(--link-hover,#409eff);text-decoration:underline;
 		} hr {margin:calc(var(--spacing,1rem) * 2) 0;border:0;border-top:var(--border-width,1px) solid var(--border,#d1cfc7);box-sizing:content-box;overflow:visible;
@@ -135,7 +136,7 @@
 		} blockquote,.blockquote,[role="presentation"] {margin:var(--spacing,1rem) var(--spacing,1rem) var(--spacing,1rem) calc(var(--spacing,1rem) * 2);padding-left:var(--spacing,1rem);color:var(--text,#343a40);font-style:italic;border-left:0.75em solid var(--blockquote-border,#007bff);text-shadow:1px 1px 2px var(--text-shadow,#fff);
 		} blockquote p,.blockquote p,[role="presentation"] p,li>ul,li>ol {margin-bottom:0;
 		} footer,.footer,[role="contentinfo"] {margin-top:calc(var(--spacing,1rem) * 3);font-family:var(--font-reader-mode,var(--font-footer,var(--font-body,var(--font-fallback))));color:var(--footer-text,#f8f9fa);text-align:center;background:var(--footer,#343a40);overflow:hidden;
-		} footer>div>*,.footer>div>*,[role="contentinfo"]>div>* {margin-top:var(--spacing,1rem);float:inline-start;text-align:justify;} footer:empty,.footer:empty,dialog:empty,nav:empty {display:none !important;
+		} footer>div>*,.footer>div>*,[role="contentinfo"]>div>* {margin-top:var(--spacing,1rem);float:inline-start;text-align:justify;} privy,.privy,footer:empty,.footer:empty,dialog:empty,nav:empty {display:none !important;
 		} :focus-visible {outline:2px solid var(--link);outline-offset:2px;box-shadow:0 0 0 2px var(--background,#fffcf7), 0 0 0 4px var(--link);} :focus:not(:focus-visible) {outline:none;
 		} /* Main Menu */
 		main nav,main [role="navigation"] {margin:calc(var(--spacing,1rem) * 2) 0 var(--spacing,1rem);
@@ -152,6 +153,7 @@
 		} body>nav>.links,body>[role="navigation"]>.links {float:inline-end;
 		} body>nav>#breadcrumbs,body>[role="navigation"]>#breadcrumbs {position:absolute;right:0;visibility:hidden;
 		} body.loaded>nav,body.loaded>[role="navigation"] {visibility:visible !important;
+		} body[class*="light"]>nav>img.logo,body[class*="light"]>[role="navigation"]>.logo {filter:none;
 		} /* Media */
 		img,svg,video,canvas,audio,iframe,embed,object {display:block;max-width:100%;background-size:cover;
 		} span>img,span>picture {display:inline-block !important;margin-bottom:0 !important;max-height:1em;width:auto;vertical-align:text-bottom;background-color:transparent !important;
@@ -171,13 +173,12 @@
 		} fieldset div label {margin-bottom:0;font-weight:normal;cursor:pointer;
 		} input[type="text"],input[type="email"],input[type="password"],input[type="number"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime-local"],input[type="range"],input[list],input[type="search"],input[type="tel"],input[type="url"],input[type="file"],textarea,select,progress,meter,.input {display:block;padding:calc(var(--spacing,1rem) * 0.5) calc(var(--spacing,1rem) * 0.75);margin-bottom:var(--spacing,1rem);width:100%;height:2.5em;color:var(--text,#343a40);font-size:1rem;line-height:1.5;background:var(--input,#fff);background-clip:padding-box;border:var(--border-width,1px) solid var(--input-border,#ced4da);border-radius:var(--radiuses,.25rem);transition:border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;cursor:text;caret-color:auto;
 		} input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="number"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime-local"]:focus,input[type="range"]:focus,input[list]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="url"]:focus,textarea:focus,select:focus {color:var(--text,#343a40);background:var(--input,#fff);outline:0;box-shadow:var(--input-focus-shadow,0 0 0.25rem 0.15rem #0d6efd80);
+		} select,input[type="file"] {cursor:pointer;} select option {color:var(--text,#343a40);} ::placeholder,select:invalid {color:darkgray;color:color-mix(in srgb,var(--text,#343a40) 50%, transparent);
 		} input[disabled],select[disabled],textarea[disabled] {background:var(--disabled,#d0cec6);opacity:0.5;cursor:not-allowed !important;
-		} input[type="file"],textarea {height:auto;min-height:2.5em;resize:vertical;} ::-webkit-file-upload-button {-webkit-appearance:button;font:inherit;
 		} input[type="checkbox"]:not(.toggle),input[type="radio"] {margin-left:0.4em;transform:scale(1.39);
-		} input[type="checkbox"].toggle {appearance:none;display:inline-block;margin-left:0.4em;width:40px;height:24px;background-color:var(--secondary,#9ba2a6);white-space:nowrap;transition:400ms;transform:scale(1);border-radius:24px;cursor:pointer;
+		} input[type="checkbox"].toggle {appearance:none;display:inline-block;margin-left:0.4em;min-width:40px;height:24px;background-color:var(--secondary,#9ba2a6);white-space:nowrap;transition:400ms;transform:scale(1);border-radius:24px;cursor:pointer;
 		} input[type="checkbox"].toggle:before {position:absolute;content:"";height:16px;width:16px;left:4px;bottom:4px;background-color:var(--button-text,#fff);transition:400ms;border-radius:50%;
-		} input[type="checkbox"].toggle:checked {background-color:var(--button);} input[type="checkbox"].toggle:checked:before {transform:translateX(16px);
-		} input[type="checkbox"].button {appearance:none;-webkit-appearance:none;transform:scale(1);
+		} input[type="checkbox"].toggle:checked {background-color:var(--button);} input[type="checkbox"].toggle:checked:before {transform:translateX(16px);} input[type="checkbox"].button {appearance:none;-webkit-appearance:none;transform:scale(1);
 		} button,input[type="submit"],input[type="reset"],input[type="button"],.button {display:inline-block;margin:0 var(--border-width,1px) 0;padding:calc(var(--spacing,1rem) * 0.5) var(--spacing,1rem);line-height:1.5;color:var(--button-text,#fff);font-size:1rem;font-weight:400;text-align:center;text-decoration:none;vertical-align:text-bottom;background:var(--secondary,#9ba2a6);border:var(--border-width,1px) solid var(--input-border,#ced4da);border-radius:var(--radiuses,.25rem);transition:color 0.15s ease-in-out, background 0.15s ease-in-out, border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;user-select:none;cursor:pointer;
 		} button[type="reset"],button.reset,input[type="submit"].reset,input[type="reset"],input[type="button"].reset,.button.reset,#color-scheme,#reader-scheme,#nocode-mode,#consent-manage {color:var(--text,#343a40);background:var(--surface,#f0eee8);border:var(--border-width,1px) solid var(--border,#d1cfc7);
 		} button[type="submit"],button.submit,input[type="submit"],input[type="reset"].submit,input[type="button"].submit,.button.submit {color:var(--button-text,#fff);background:var(--button);border:var(--border-width,1px) solid var(--button);
@@ -187,14 +188,15 @@
 		} body[class*="light"] button:focus,body[class*="light"] input[type="submit"]:focus,body[class*="light"] input[type="reset"]:focus,body[class*="light"] input[type="button"]:focus,.button:focus {box-shadow:0 0 0 0.1rem var(--link-hover,#409eff);
 		} button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {outline:1px dotted ButtonText;
 		} div:has([type="text"],[type="email"],[type="password"],[type="number"],[type="date"],[type="search"],[type="tel"],[type="url"],[type="file"],textarea,select)>*:not(input,textarea,select) {cursor:default;
+		} input[type="file"],textarea {height:auto;min-height:2.5em;resize:vertical;} ::-webkit-file-upload-button {-webkit-appearance:button;font:inherit;
 		} /* Code */
 		pre {position:relative;padding-left:2rem;counter-reset:line;white-space:pre-wrap;overflow-x:auto;border-radius:var(--radiuses,.25rem);
 		} pre code {display:block;padding:0em 0.5em;font-family:var(--font-monospace,Consolas),monospace;font-size:0.9em;border-radius:0;
 		} pre code::before {position:absolute;width:2rem;left:0;padding-right:0.25em;color:var(--primary,#007bff);text-align:end;background-color:var(--disabled,#d0cec6);counter-increment:line;content:counter(line);user-select:none;cursor:default;
 		} /* Accordion */
 		details {background:var(--flex,#fff);border:var(--border-width,1px) solid var(--border,#d1cfc7);border-radius:var(--radiuses,.25rem);
-        } details>summary,details .summary {display:list-item;position:relative;padding:var(--spacing,1rem);padding-left:0;margin-left:var(--spacing,1rem);font-weight:bold;cursor:pointer;list-style:none;
-        } details>summary::before {content:'\1fb6c\fe0e';position:absolute;right:calc(var(--spacing,1rem) * 1.5);font-size:1em;transform:rotate(0deg);transition:transform 0.2s ease-in-out;
+		} details>summary,details .summary {display:list-item;position:relative;padding:var(--spacing,1rem);padding-left:0;margin-left:var(--spacing,1rem);font-weight:bold;cursor:pointer;list-style:none;
+		} details>summary::before {content:'\27a4';position:absolute;right:calc(var(--spacing,1rem) * 1.5);font-size:1em;transform:rotate(0deg);transition:transform 0.2s ease-in-out;
 		} details>div {border-top:var(--border-width,1px) solid var(--border,#d1cfc7);
 		} details[open]>summary::before {transform:rotate(90deg);} details>summary::-webkit-details-marker {display:none;
 		} /* Tables */
@@ -264,7 +266,7 @@
 		} 
 	</style>
 	<!-- Main.HTML CSS Wireframe: END -->
-	<!-- # Main.HTML CSS insert additionak styles after this line. ### -->
+	<!-- # Main.HTML CSS insert additional styles after this line. ### -->
 
 </head>
 <body>
@@ -740,21 +742,22 @@
 						<div class="flexible">
 							<div role="complementary">
 								<select id="country_code" name="country_code">
-									<option value="+1" selected>🇺🇸 USA</option>
-									<option value="+1">🇨🇦 Canada</option>
-									<option value="+44">🇬🇧 UK</option>
-									<option value="+61">🇦🇺 Australia</option>
-									<option value="+86">🇨🇳 China</option>
-									<option value="+91">🇮🇳 India</option>
-									<option value="+49">🇩🇪 Germany</option>
-									<option value="+33">🇫🇷 France</option>
-									<option value="+55">🇧🇷 Brazil</option>
-									<option value="+52">🇲🇽 Mexico</option>
-									<option value="+64">🇳🇿 New Zealand</option>
-									<option value="+65">🇸🇬 Singapore</option>
-									<option value="+353">🇮🇪 Ireland</option>
-									<option value="+82">🇰🇷 South Korea</option>
-									<option value="+81">🇯🇵 Japan</option>
+									<option selected disabled hidden>Choose an country&hellip;</option>
+									<option value="+1">&#x1F1FA;&#x1F1F8;&#xFE0F; USA</option>
+									<option value="+1">&#x1F1E8;&#x1F1E6;&#xFE0F; Canada</option>
+									<option value="+44">&#x1F1EC;&#x1F1E7;&#xFE0F; UK</option>
+									<option value="+61">&#x1F1E6;&#x1F1FA;&#xFE0F; Australia</option>
+									<option value="+86">&#x1F1E8;&#x1F1F3;&#xFE0F; China</option>
+									<option value="+91">&#x1F1EE;&#x1F1F3;&#xFE0F; India</option>
+									<option value="+49">&#x1F1E9;&#x1F1EA;&#xFE0F; Germany</option>
+									<option value="+33">&#x1F1EB;&#x1F1F7;&#xFE0F; France</option>
+									<option value="+55">&#x1F1E7;&#x1F1F7;&#xFE0F; Brazil</option>
+									<option value="+52">&#x1F1F2;&#x1F1FD;&#xFE0F; Mexico</option>
+									<option value="+64">&#x1F1F3;&#x1F1FF;&#xFE0F; New Zealand</option>
+									<option value="+65">&#x1F1F8;&#x1F1EC;&#xFE0F; Singapore</option>
+									<option value="+353">&#x1F1EE;&#x1F1EA;&#xFE0F; Ireland</option>
+									<option value="+82">&#x1F1F0;&#x1F1F7;&#xFE0F; South Korea</option>
+									<option value="+81">&#x1F1EF;&#x1F1F5;&#xFE0F; Japan</option>
 								</select>
 							</div>
 							<div class="wide">
@@ -773,11 +776,11 @@
 							<div>
 								<label for="country">Select: <code class="element">&lt;<span class="html">select</span>&gt;</code></label>
 								<select id="country" name="country">
-									<option value="">--Please choose an option--</option>
-									<option value="us">🇺🇸 United States</option>
-									<option value="ca">🇨🇦 Canada</option>
-									<option value="gb">🇬🇧 United Kingdom</option>
-									<option value="au">🇦🇺 Australia</option>
+									<option selected disabled hidden>Choose an country&hellip;</option>
+									<option value="us">&#x1F1FA;&#x1F1F8;&#xFE0F; United States</option>
+									<option value="ca">&#x1F1E8;&#x1F1E6;&#xFE0F; Canada</option>
+									<option value="gb">&#x1F1EC;&#x1F1E7;&#xFE0F; United Kingdom</option>
+									<option value="au">&#x1F1E6;&#x1F1FA;&#xFE0F; Australia</option>
 								</select>
 							</div>
 						</div>
@@ -947,7 +950,7 @@
 				<!-- Add more flexible links containers if You Need -->
 			</nav>
 			<p class="disclaimer">Add disclaimers here!</p>
-			<p class="copyright">Add copyrights here!</p>
+			<p class="copyright">Add copyrights here! Dynamic link to <a role="button" id="contact">contact us</a>.</p>
 			<p class="social">Add socials and links here:
 				<a class="icon linkedin" href="" target="_blank" rel="noopener">LinkedIn</a>
 				<a class="icon youtube" href="" target="_blank" rel="noopener">YouTube</a>

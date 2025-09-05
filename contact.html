@@ -6,14 +6,14 @@
 	<meta charset="UTF-8" />
 	
 	<!-- Page Meta -->
-	<title>Sitemap</title>
+	<title>Contact Page</title>
 	<meta name="author" content="Your Name">
 	<meta name="website" content="Your Website" />
 	<meta name="description" content="Your Page Description" />
 	<meta name="robots" content="all">
 	<meta name="theme" content="default.css">
 	<meta name="theme-color" content="gray">
-	<link rel="canonical" href="https://www.mainhtml.dev/sitemap.html" />
+	<link rel="canonical" href="https://www.mainhtml.dev/contact.html" />
 	<noscript><base href="https://www.mainhtml.dev/"></noscript>
 	
 	<!-- Custom Main.HTML & Main.JS -->
@@ -29,8 +29,8 @@
 	
 	<!-- Page Open Graph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.mainhtml.dev/sitemap.html" />
-	<meta property="og:title" content="Your Website Sitemap" />
+	<meta property="og:url" content="https://www.mainhtml.dev/contact.html" />
+	<meta property="og:title" content="Your Website Contact Page" />
 	<meta property="og:description" content="Your Page Description" />
 	<meta property="og:image" content="https://www.mainhtml.dev/image/mainhtml.svg" />
 	
@@ -283,48 +283,41 @@
 	<main role="main">
 		<header role="banner">
 			<div class="padded below">
-				<h1 class="title">Main Sitemap</h1>
-				<p>The human readable sitemap, usually called <code>sitemap.html</code> is also used by Main HTML with Main JS Fetcher function to populate the Main Menu.</p>
+				<h1 class="title">Main Contact Form</h1>
+				<p>The contact us form, stored in <code>contact.html</code> is also used by Main HTML with Main JS fetcher() function to populate the contact us form.</p>
 				<p><a class="button submit" href="/">Back to Homepage</a></p>
 			</div>
 		</header>
-		<div class="clone origin menu" data-to="dialog[role='menu']">
-			<nav class="pad">
-				<details open>
-					<summary>Category 1</summary>
-					<div class="pad">
-						<details>
-							<summary>Subcategory 1</summary>
-							<div>
-								<a class="summary" href="/">Link 1</a>
-								<a class="summary" href="/">Link 2</a>
-							</div>
-						</details>
-						<details>
-							<summary>Subcategory 2</summary>
-							<div class="pad">
-								<a class="summary" href="/">Link 3</a>
-								<a class="summary" href="/">Link 4</a>
-							</div>
-						</details>
+		<div class="origin contact">
+			<form class="pad sides" action="/form/submit" method="post" role="form" aria-label="Contact us form">
+				<fieldset class="surface pad sides">
+					<legend>Contact Us</legend>
+					<div>
+						<label for="fullname">Name:</label>
+						<input type="text" id="name" name="name" placeholder="John Doe" required>
 					</div>
-				</details>
-				<details class="spacing above">
-					<summary>Category 2</summary>
-					<div class="pad">
-						<a class="summary" href="/">Link 5</a>
-						<a class="summary" href="/">Link 6</a>
-						<a class="summary" href="/">Link 7</a>
+					<div>
+						<label for="email">Email: <em>(optional)</em></label>
+						<input type="email" id="email" name="email" placeholder="you@example.com">
 					</div>
-				</details>
-				<details class="spacing above">
-					<summary>Category 3</summary>
-					<div class="pad">
-						<a class="summary" href="/">Link 8</a>
-						<a class="summary" href="/">Link 9</a>
+					<div>
+						<label for="country">Reason:</label>
+						<select name="reason" required>
+							<option value="" selected disabled hidden>Choose an option&hellip;</option>
+							<option value="gdpr">GDPR Request</option>
+							<option value="other">(Other)</option>
+						</select>
 					</div>
-				</details>
-			</nav>
+					<div>
+						<label for="message">Your Message:</label>
+						<textarea id="message" name="message" rows="5" placeholder="Enter your message here..." autocorrect="on"></textarea>
+					</div>
+					<div>
+						<input type="submit" value="Send" role="button" id="submit">
+						<input type="reset" value="Cancel" role="button" id="application-close">
+					</div>
+				</fieldset>
+			</form>
 		</div>
 	</main>
 

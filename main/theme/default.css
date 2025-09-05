@@ -2,7 +2,7 @@
 # Main HTML is an accessibility aware template putting users and web developers first, Copyright (C) 2025 Andy Futcher. See <https://mainhtml.dev/> for more
 # This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 # This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
-## Main.HTML not modified from original. Date: 2025-08-26 ### --> */
+## Main.HTML not modified from original. Date: 2025-09-05 ### */
 
 /* Main HTML Theme Colours */
 :root {	/* Page Boundaries */
@@ -51,7 +51,7 @@
 } .color-pop {filter:contrast(2);
 } body[class*="nocode"] *:not(pre)>code {display:none;
 } /* Main HTML Tooltips */
-tooltip,.tooltip,[role="tooltip"] {position:absolute;inline-size:max-content;max-inline-size:320px;padding:1em 0.75em;margin:0;left:auto;color:black;font-size:1rem;font-weight:normal;line-height:normal;border-radius:5px;background:white;text-align:center;letter-spacing:normal;will-change:filter;opacity:0;white-space:break-spaces;transform:translateX(var(--tooltip-x,0)) translateY(var(--tooltip-y,0));transition:opacity 200ms ease,transform 200ms ease;filter:drop-shadow(0 3px 3px hsl(0 0% 0% / 15%)) drop-shadow(0 12px 12px hsl(0 0% 0% / 15%));pointer-events:none;user-select:none;--tooltip-rtl:-1;inset-inline-start:50%;inset-block-end:calc(100% + 1em);--tooltip-x:calc(50% * var(--tooltip-rtl,1));text-shadow:none;
+tooltip,.tooltip,[role="tooltip"] {position:absolute;inline-size:max-content;max-inline-size:250px;padding:1em 0.75em;margin:0;left:auto;color:black;font-size:1rem;font-weight:normal;line-height:normal;border-radius:5px;background:white;text-align:center;letter-spacing:normal;will-change:filter;opacity:0;white-space:break-spaces;transform:translateX(var(--tooltip-x,0)) translateY(var(--tooltip-y,0));transition:opacity 200ms ease,transform 200ms ease;filter:drop-shadow(0 3px 3px hsl(0 0% 0% / 15%)) drop-shadow(0 12px 12px hsl(0 0% 0% / 15%));pointer-events:none;user-select:none;--tooltip-rtl:-1;inset-inline-start:50%;inset-block-end:calc(100% + 1em);--tooltip-x:calc(50% * var(--tooltip-rtl,1));text-shadow:none;
 } tooltip:dir(rtl),.tooltip:dir(rtl),[role="tooltip"]:dir(rtl) {--tooltip-rtl:1;} :has(>tooltip,>.tooltip,>[role="tooltip"]) {position:relative;cursor:pointer;
 } tooltip::after,.tooltip::after,[role="tooltip"]::after {content:'';background:white;position:absolute;z-index:-1;inset:0;mask:var(--tooltip);--tooltip:conic-gradient(from -30deg at bottom,rgba(0,0,0,0),#000 1deg 60deg,rgba(0,0,0,0) 61deg) bottom / 100% 50% no-repeat;inset-block-end:calc(10px * -1);border-block-end:10px solid transparent;
 } @media (min-width:720px) { 
@@ -97,9 +97,13 @@ dialog.notification .warning,dialog[role="status"] .warning,dialog.noscript>div 
 } dialog.notification div>p>button:empty,dialog[role="status"] div>p>button:empty {display:block;position:relative;margin:0.3em 1em;float:right;font-family:sans-serif;color:inherit;transform:scale(2);background:transparent;border:none;outline:none;box-shadow:none !important;cursor:pointer;
 } dialog.notification #notification-dismiss:empty::before,dialog[role="status"] #notification-dismiss:empty::before {content:'\00d7\fe0e';
 } /* Main HTML Dialog: Menu */
-dialog.menu,dialog[role="menu"] {position:fixed;padding-top:calc(var(--nav-height, 0px) + var(--border-width, 1px));display:block;top:0;left:-100%;width:400px;max-width:85vw;height:100vh;border-width:0 var(--border-width,1px) 0 0;background:color-mix(in srgb,var(--surface,#f0eee8) 50%, transparent);backdrop-filter:blur(10px) brightness(0.5);border-radius:0 calc(var(--radiuses, .25rem) * 2) calc(var(--radiuses, .25rem) * 2) 0;z-index:calc(var(--z-limit,10) - 1);overflow-y:auto;visibility:hidden;
+dialog.menu,dialog[role="menu"] {position:fixed;padding-top:calc(var(--nav-height, 0px) + var(--border-width, 1px) + var(--page-top, 0px));display:block;top:0;left:-100%;width:400px;max-width:85vw;height:100vh;border-width:0 var(--border-width,1px) 0 0;background:var(--surface,#f0eee8);background:color-mix(in srgb,var(--surface,#f0eee8) 50%, transparent);backdrop-filter:blur(10px) brightness(0.5);border-radius:0 calc(var(--radiuses, .25rem) * 2) calc(var(--radiuses, .25rem) * 2) 0;z-index:calc(var(--z-limit,10) - 1);overflow-y:auto;visibility:hidden;
 } body.loaded dialog.menu,body.loaded dialog[role="menu"] {transition:left 300ms ease-out;
 } body.menu dialog.menu,body.menu dialog[role="menu"] {left:0%;visibility:visible;
+} /* Main HTML Dialog: Application */
+dialog.application,dialog[role="application"] {position:fixed;padding-top:calc(var(--nav-height, 0px) + var(--border-width, 1px) + var(--page-top, 0px));display:block;top:0;left:auto;right:-100%;width:600px;max-width:85vw;height:100vh;border-width:0 0 0 var(--border-width,1px);background:var(--surface,#f0eee8);background:color-mix(in srgb,var(--surface,#f0eee8) 50%, transparent);backdrop-filter:blur(10px) brightness(0.5);border-radius:calc(var(--radiuses, .25rem) * 2) 0 0 calc(var(--radiuses, .25rem) * 2);z-index:calc(var(--z-limit,10) - 1);overflow-y:auto;visibility:hidden;
+} body.loaded dialog.application,body.loaded dialog[role="application"] {transition:right 300ms ease-out;
+} body.application dialog.application,body.application dialog[role="application"] {right:0%;visibility:visible;
 }
 
 /* Main HTML Icons */
@@ -180,15 +184,6 @@ code.text {color:var(--text);
 } 
 
 /* Main HTML Containers: Slideshow */
-.container.slideshow,container.slideshow {background-color:var(--header);box-shadow:0 0 1rem rgba(0,0,0,0.2);
-} .container.slideshow>img,container.slideshow>img {opacity:0;transition:opacity 1s ease-in-out,z-index 1s ease-in-out;animation:fadeAnimation 15s infinite; /* Total duration:15s (5s per image, 3 images) */
-} @keyframes fadeAnimation {
-	0% { opacity:0;z-index:calc(var(--z-limit,10) - 6); }
-	6.66% { opacity:1;z-index:calc(var(--z-limit,10) - 5); }   /* Fade in (1s of 15s cycle) */
-	26.66% { opacity:1;z-index:calc(var(--z-limit,10) - 5); }  /* Stay visible (3s of 15s cycle) */
-	33.33% { opacity:0;z-index:calc(var(--z-limit,10) - 6); }  /* Fade out (1s of 15s cycle) */
-	100% { opacity:0;z-index:calc(var(--z-limit,10) - 6); }	/* Remain hidden until next cycle */
-} .container.slideshow>img:nth-child(1),container.slideshow>img:nth-child(1) {animation-delay:0s;
-} .container.slideshow>img:nth-child(2),container.slideshow>img:nth-child(2) {animation-delay:5s; /* Delay by one image's duration (5s) */
-} .container.slideshow>img:nth-child(3),container.slideshow>img:nth-child(3) {animation-delay:10s; /* Delay by two images' duration (10s) */
-} /* Add more .slideshow-image:nth-child() rules and adjust delays for more images */
+.container.slideshow,container.slideshow {background-color:var(--header);
+} .container.slideshow>img,.container.slideshow>figure,.container.slideshow>picture,container.slideshow>img,container.slideshow>figure,container.slideshow>picture {opacity:0;
+} 
