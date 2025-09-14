@@ -2,7 +2,7 @@
 # Main HTML is an accessibility aware template putting users and web developers first, Copyright (C) 2025 Andy Futcher. See <https://mainhtml.dev/> for more
 # This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 # This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
-## Main.HTML not modified from original. Date: 2025-09-05 ### */
+## Main.HTML not modified from original. Date: 2025-09-15 ### */
 
 /* Main HTML Theme Colours */
 :root {	/* Page Boundaries */
@@ -107,7 +107,7 @@ dialog.application,dialog[role="application"] {position:fixed;padding-top:calc(v
 }
 
 /* Main HTML Icons */
-icon,.icon {overflow:hidden;text-indent:4rem;filter:invert(var(--logo-invert,1));} icon *,.icon * {filter:invert(1);
+icon,.icon {overflow:visible;text-indent:4rem;filter:invert(var(--logo-invert,1));} icon *,.icon * {filter:invert(1);
 } icon.apple,.icon.apple {background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M11.182.008l-.776.138L8.857 1.18l-.848 1.679-.03.837.888-.112 1.587-1.146.735-1.705-.007-.725m3.314 11.733l-1.154-.926-.725-1.051-.234-1.444.352-1.36.568-.863.778-.631-1.254-1.157-1.563-.434-1.254.116-1.968.607-2.267-.665-1.824.328-.976.636-1.098 1.601-.369 2.562.303 1.998 1.273 2.796 1.659 1.899.807.24 1.036-.173 1.766-.472 1.782.539 1.652-.105.979-.825 1.259-1.933.473-1.282M11.182.008l-.776.138L8.857 1.18l-.848 1.679-.03.837.888-.112 1.587-1.146.735-1.705-.007-.725m3.314 11.733l-1.154-.926-.725-1.051-.234-1.444.352-1.36.568-.863.778-.631-1.254-1.157-1.563-.434-1.254.116-1.968.607-2.267-.665-1.824.328-.976.636-1.098 1.601-.369 2.562.303 1.998 1.273 2.796 1.659 1.899.807.24 1.036-.173 1.766-.472 1.782.539 1.652-.105.979-.825 1.259-1.933.473-1.282"/></svg>');
 } icon.block,.icon.block,#nocode-mode::before {background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M14 1l.707.293L15 2v12l-.293.707L14 15H2l-.707-.293L1 14V2l.293-.707L2 1h12M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/></svg>');
 } icon.bsky,.icon.bsky {background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M3.468 1.948l2.683 2.789L8 7.616l1.85-2.879 2.682-2.789L14.762 1l.882.353L16 2.632l-.444 4.692-.685 1.256-1.088.75-2.732.24 1.972.632 1.049.99.109 1.229-.849 1.349-1.178.955-1.01.353-1.551-.583-.989-1.44-.502-1.265L8 11.572l-.102.218-.502 1.265-.989 1.44-1.551.583-1.01-.353-1.179-.955-.849-1.349.109-1.229 1.049-.99 1.971-.632-2.731-.239-1.088-.75-.684-1.256L0 2.632.356 1.354 1.238 1l2.23.948"/></svg>');
