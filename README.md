@@ -5,7 +5,6 @@
 </p>
 
 <h1 align="center">Main HTML</h1>
-This project has now merged with [Betterprompt 🚀️ ](https://www.betterprompt.com/) [Rocket](https://github.betterprompt.com/rocket) project and will continue development; see you there!
 Main HTML is an accessibility aware template putting users and web developers first. This makes your website into a living document through a collection of rules and interactive roles adapting the content delivery, inferred by behaviour and browser insights. Start your next project with a modern template that makes designing and building websites easier and faster. Leveraging server-less architecture for performance and millions of styling possibilities, you can build a small website in minutes or maintain a significant digital presence with Main.
 
 The Main.HTML project provides you with a truly portable website builder template. Powered by Main.JS Under the hood!
@@ -46,6 +45,7 @@ Version 0.6-beta - Consent Release
 
 
 ### About the developer
+This project has now merged with [Betterprompt 🚀️ ](https://www.betterprompt.com/)[Rocket](https://github.betterprompt.com/rocket) project and will continue development; see you there!
 
 Copyright (C) 2025 **Andy Futcher**, I am the developer and maintainer of Main JS and Main HTML project and professional analyst at a not-for-profit health insurer.
 
