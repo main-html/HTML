@@ -45,6 +45,7 @@ Version 0.6-beta - Consent Release
 
 
 ### About the developer
+This project has now merged with [Betterprompt 🚀️ ](https://www.betterprompt.com/)[Rocket](https://github.betterprompt.com/rocket) project and will continue development; see you there!
 
 Copyright (C) 2025 **Andy Futcher**, I am the developer and maintainer of Main JS and Main HTML project and professional analyst at a not-for-profit health insurer.
 
